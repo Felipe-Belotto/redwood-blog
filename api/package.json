@@ -4,6 +4,10 @@
   "private": true,
   "dependencies": {
     "@redwoodjs/api": "7.6.1",
+    "@redwoodjs/auth-dbauth-api": "7.6.1",
     "@redwoodjs/graphql-server": "7.6.1"
+  },
+  "devDependencies": {
+    "@redwoodjs/auth-dbauth-setup": "^7.6.1"
   }
 }
