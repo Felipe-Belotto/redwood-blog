@@ -21,7 +21,16 @@
   },
   "devDependencies": {
     "@redwoodjs/vite": "7.6.2",
+    "@storybook/addon-essentials": "^7.0.0",
+    "@storybook/addon-postcss": "^3.0.0-alpha.1",
+    "@storybook/react": "^7.0.0",
+    "@storybook/react-vite": "^7.0.0",
+    "@storybook/testing-library": "^0.2.2",
     "@types/react": "^18.2.55",
-    "@types/react-dom": "^18.2.19"
+    "@types/react-dom": "^18.2.19",
+    "autoprefixer": "^10.4.19",
+    "postcss": "^8.4.38",
+    "postcss-loader": "^8.1.1",
+    "tailwindcss": "^3.4.3"
   }
 }

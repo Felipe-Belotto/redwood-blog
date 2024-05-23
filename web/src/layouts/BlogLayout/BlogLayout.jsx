@@ -10,6 +10,8 @@ const BlogLayout = ({ children }) => {
     window.reload(true)
   }
 
+  console.log(currentUser)
+
   return (
     <>
       <header>
@@ -19,7 +21,7 @@ const BlogLayout = ({ children }) => {
           </h1>
           {isAuthenticated ? (
             <div className="flex-between">
-              {/* <span>Logged in as {currentUser}</span> */}
+
               <button type="button" onClick={logOut}>
                 Logout
               </button>
