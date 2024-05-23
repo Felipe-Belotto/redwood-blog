@@ -3206,12 +3206,12 @@
     uuid "9.0.1"
 
 "@redwoodjs/auth-dbauth-setup@^7.6.1":
-  version "7.6.1"
-  resolved "https://registry.yarnpkg.com/@redwoodjs/auth-dbauth-setup/-/auth-dbauth-setup-7.6.1.tgz#12461d3533267ffee85c360544c0c35641e6542b"
-  integrity sha512-sGApZAFRLs0/ae5lCwtTcU0VG3qW/6uk5Bg9ablh2AMAPqup8rj+bF76NiI9anTcqtqtmQpsFx3vfR3A5nhX8A==
+  version "7.6.2"
+  resolved "https://registry.yarnpkg.com/@redwoodjs/auth-dbauth-setup/-/auth-dbauth-setup-7.6.2.tgz#b912c3f1515ee0500c86b7a81a977d71c099354a"
+  integrity sha512-Aub6dpOxkEgOrPkgmtCbz7j2zVt8uBZtzAX9vm2y3Hscj2wFGiNaOd93RgcwVOOIqFzoZEJ6eCyvNUHpWI3KHQ==
   dependencies:
     "@babel/runtime-corejs3" "7.24.5"
-    "@redwoodjs/cli-helpers" "7.6.1"
+    "@redwoodjs/cli-helpers" "7.6.2"
     "@simplewebauthn/browser" "7.4.0"
     core-js "3.37.1"
     prompts "2.4.2"
@@ -3272,6 +3272,26 @@
     "@opentelemetry/api" "1.8.0"
     "@redwoodjs/project-config" "7.6.1"
     "@redwoodjs/telemetry" "7.6.1"
+    chalk "4.1.2"
+    dotenv "16.4.5"
+    execa "5.1.1"
+    listr2 "6.6.1"
+    lodash "4.17.21"
+    pascalcase "1.0.0"
+    prettier "2.8.8"
+    prompts "2.4.2"
+    terminal-link "2.1.1"
+
+"@redwoodjs/cli-helpers@7.6.2":
+  version "7.6.2"
+  resolved "https://registry.yarnpkg.com/@redwoodjs/cli-helpers/-/cli-helpers-7.6.2.tgz#a782015980b45342915507aebef1ceb47f0b92db"
+  integrity sha512-3zD229JwYQQO/w4EJDXJNQzhYtTAUUJ7Cb1WVMP5OC9AyeeL9g1IswfHAmB4n+Cvcz30ovB0RCrjtqKtqcb2XA==
+  dependencies:
+    "@babel/core" "^7.22.20"
+    "@iarna/toml" "2.2.5"
+    "@opentelemetry/api" "1.8.0"
+    "@redwoodjs/project-config" "7.6.2"
+    "@redwoodjs/telemetry" "7.6.2"
     chalk "4.1.2"
     dotenv "16.4.5"
     execa "5.1.1"
@@ -3542,6 +3562,16 @@
     fast-glob "3.3.2"
     string-env-interpolation "1.0.1"
 
+"@redwoodjs/project-config@7.6.2":
+  version "7.6.2"
+  resolved "https://registry.yarnpkg.com/@redwoodjs/project-config/-/project-config-7.6.2.tgz#01d347eca9d61fa3db5141d886cfe9656fddfe91"
+  integrity sha512-/YoDuunAV+fR5mmfJV6byPesrPkapA/2JepVXibWRLR7UQG8uIN8ds1F1UnrcVLwWMqmdudvzP9N9KZWM224TQ==
+  dependencies:
+    "@iarna/toml" "2.2.5"
+    deepmerge "4.3.1"
+    fast-glob "3.3.2"
+    string-env-interpolation "1.0.1"
+
 "@redwoodjs/router@7.6.1":
   version "7.6.1"
   resolved "https://registry.yarnpkg.com/@redwoodjs/router/-/router-7.6.1.tgz#8fd4e9b712ce06c9ecb87510961bffe3477d46cc"
@@ -3581,6 +3611,36 @@
     vscode-languageserver-types "3.17.5"
     yargs-parser "21.1.1"
 
+"@redwoodjs/structure@7.6.2":
+  version "7.6.2"
+  resolved "https://registry.yarnpkg.com/@redwoodjs/structure/-/structure-7.6.2.tgz#ea0f12b6d739064d67d3d3fbc1c66861b504e2a3"
+  integrity sha512-nmiBMZu5sVo44n9z2naGSBpIjoJERGGQ08LamIcS4mdWxZopSdvPBziH+m/m86Pkl/mx7emfeHcbOOFrgR+Pqg==
+  dependencies:
+    "@babel/runtime-corejs3" "7.24.5"
+    "@iarna/toml" "2.2.5"
+    "@prisma/internals" "5.14.0"
+    "@redwoodjs/project-config" "7.6.2"
+    "@types/line-column" "1.0.2"
+    camelcase "6.3.0"
+    core-js "3.37.1"
+    deepmerge "4.3.1"
+    dotenv-defaults "5.0.2"
+    enquirer "2.4.1"
+    fast-glob "3.3.2"
+    fs-extra "11.2.0"
+    graphql "16.8.1"
+    lazy-get-decorator "2.2.1"
+    line-column "1.0.2"
+    lodash "4.17.21"
+    lodash-decorators "6.0.1"
+    lru-cache "10.2.2"
+    proxyquire "2.1.3"
+    ts-morph "15.1.0"
+    vscode-languageserver "6.1.1"
+    vscode-languageserver-textdocument "1.0.11"
+    vscode-languageserver-types "3.17.5"
+    yargs-parser "21.1.1"
+
 "@redwoodjs/telemetry@7.6.1":
   version "7.6.1"
   resolved "https://registry.yarnpkg.com/@redwoodjs/telemetry/-/telemetry-7.6.1.tgz#6e40d72eaa9102df63f70890049631d6c9c453aa"
@@ -3588,6 +3648,20 @@
   dependencies:
     "@redwoodjs/project-config" "7.6.1"
     "@redwoodjs/structure" "7.6.1"
+    "@whatwg-node/fetch" "0.9.17"
+    ci-info "4.0.0"
+    envinfo "7.13.0"
+    systeminformation "5.22.9"
+    uuid "9.0.1"
+    yargs "17.7.2"
+
+"@redwoodjs/telemetry@7.6.2":
+  version "7.6.2"
+  resolved "https://registry.yarnpkg.com/@redwoodjs/telemetry/-/telemetry-7.6.2.tgz#355f834511659e9716b8e856f4c6cd5e22432030"
+  integrity sha512-F1ihbSQTFr3bcgY5mU8xHeZFHBKl+AwFFhiBlnpA4/onNyS0Z5zOIerW7dZnvuLYzbShcfdN1Fu9An/CAXUAIA==
+  dependencies:
+    "@redwoodjs/project-config" "7.6.2"
+    "@redwoodjs/structure" "7.6.2"
     "@whatwg-node/fetch" "0.9.17"
     ci-info "4.0.0"
     envinfo "7.13.0"
@@ -7407,9 +7481,9 @@ ee-first@1.1.1:
   integrity sha512-WMwm9LhRUo+WUaRN+vRuETqG89IgZphVSNkdFgeb6sS/E4OrDIN7t48CAewSHXc6C8lefD8KKfr5vY61brQlow==
 
 electron-to-chromium@^1.4.668:
-  version "1.4.777"
-  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.4.777.tgz#f846fbba23fd11b3c6f97848cdda94896fdb8baf"
-  integrity sha512-n02NCwLJ3wexLfK/yQeqfywCblZqLcXphzmid5e8yVPdtEcida7li0A5WQKghHNG0FeOMCzeFOzEbtAh5riXFw==
+  version "1.4.778"
+  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.4.778.tgz#1e429f3f9cf572936693a898c0527adf6123ef76"
+  integrity sha512-C6q/xcUJf/2yODRxAVCfIk4j3y3LMsD0ehiE2RQNV2cxc8XU62gR6vvYh3+etSUzlgTfil+qDHI1vubpdf0TOA==
 
 elliptic@^6.5.3, elliptic@^6.5.5:
   version "6.5.5"
