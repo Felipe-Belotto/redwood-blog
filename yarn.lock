@@ -3161,16 +3161,16 @@
     "@prisma/prisma-schema-wasm" "5.14.0-17.56ca112d5a19c9925b53af75c3c6b7ada97f9f85"
     fs-extra "11.1.1"
 
-"@redwoodjs/api-server@7.6.1":
-  version "7.6.1"
-  resolved "https://registry.npmjs.org/@redwoodjs/api-server/-/api-server-7.6.1.tgz"
-  integrity sha512-S4AgAlIY2k3+1hqsh8YXVSFf8as5VgCFPMptcJmp6x9LxWz3TUdgpewo57t+68DNlSCGN99UJ51fqrUl6y4f9w==
+"@redwoodjs/api-server@7.6.2":
+  version "7.6.2"
+  resolved "https://registry.yarnpkg.com/@redwoodjs/api-server/-/api-server-7.6.2.tgz#ea3c20bb8b4786791234996b4e3a4cf61a162b6f"
+  integrity sha512-tFa5MEv9c7+R7DJDmRsth8fDh8LxGcOU0dDXszz82SAW80Ljp09sFM/vt1EMnlSKNL4nRAdDCA7ctGo1djeYaw==
   dependencies:
     "@fastify/url-data" "5.4.0"
-    "@redwoodjs/context" "7.6.1"
-    "@redwoodjs/fastify-web" "7.6.1"
-    "@redwoodjs/project-config" "7.6.1"
-    "@redwoodjs/web-server" "7.6.1"
+    "@redwoodjs/context" "7.6.2"
+    "@redwoodjs/fastify-web" "7.6.2"
+    "@redwoodjs/project-config" "7.6.2"
+    "@redwoodjs/web-server" "7.6.2"
     chalk "4.1.2"
     chokidar "3.6.0"
     dotenv-defaults "5.0.2"
@@ -3185,10 +3185,10 @@
     split2 "4.2.0"
     yargs "17.7.2"
 
-"@redwoodjs/api@7.6.1":
-  version "7.6.1"
-  resolved "https://registry.npmjs.org/@redwoodjs/api/-/api-7.6.1.tgz"
-  integrity sha512-vvhZohOW0zZ7DM7TLcArEwlF4Ggxpv/5ds9fnuY5ys2BgzsblwXUhHB4u5ZDr9GqfTJ+9kA+m+7gGNebiFi71g==
+"@redwoodjs/api@7.6.2":
+  version "7.6.2"
+  resolved "https://registry.yarnpkg.com/@redwoodjs/api/-/api-7.6.2.tgz#5c87fa9a51bbb0cc5b865efe0cc1020ca59ccd31"
+  integrity sha512-+K9FZlr1vdQtJ//57xgP/4a6tNJPUnK4q7GJeo0pjHmTgXvufr6hwqy8kZplfK0VcbVO/DpemjorIvXDZkxzzQ==
   dependencies:
     "@babel/runtime-corejs3" "7.24.5"
     "@prisma/client" "5.14.0"
@@ -3200,21 +3200,21 @@
     pino "8.21.0"
     title-case "3.0.3"
 
-"@redwoodjs/auth-dbauth-api@7.6.1":
-  version "7.6.1"
-  resolved "https://registry.npmjs.org/@redwoodjs/auth-dbauth-api/-/auth-dbauth-api-7.6.1.tgz"
-  integrity sha512-Px/3uBxyqbb30sW9cvrVHEPiHz2qaHcF3/e8XNF3mkmRQEQd4obdtZfVkPhjRLOY0y5ayHF0NyGblD16h+I5OQ==
+"@redwoodjs/auth-dbauth-api@7.6.2":
+  version "7.6.2"
+  resolved "https://registry.yarnpkg.com/@redwoodjs/auth-dbauth-api/-/auth-dbauth-api-7.6.2.tgz#c7a99bcfc62e4bdb40f932cca08c80befb12e8c2"
+  integrity sha512-4HEbiYNxAX+to/PjvHGZpAlESlYTNg3KRQeaA6h0qYI9kNcyZUpSI7rGn8Jfrwne5e1Ew+5uNUKB69j1DQ1DEQ==
   dependencies:
     "@babel/runtime-corejs3" "7.24.5"
-    "@redwoodjs/project-config" "7.6.1"
+    "@redwoodjs/project-config" "7.6.2"
     base64url "3.0.1"
     core-js "3.37.1"
     md5 "2.3.0"
     uuid "9.0.1"
 
-"@redwoodjs/auth-dbauth-setup@^7.6.1":
+"@redwoodjs/auth-dbauth-setup@7.6.2":
   version "7.6.2"
-  resolved "https://registry.npmjs.org/@redwoodjs/auth-dbauth-setup/-/auth-dbauth-setup-7.6.2.tgz"
+  resolved "https://registry.yarnpkg.com/@redwoodjs/auth-dbauth-setup/-/auth-dbauth-setup-7.6.2.tgz#b912c3f1515ee0500c86b7a81a977d71c099354a"
   integrity sha512-Aub6dpOxkEgOrPkgmtCbz7j2zVt8uBZtzAX9vm2y3Hscj2wFGiNaOd93RgcwVOOIqFzoZEJ6eCyvNUHpWI3KHQ==
   dependencies:
     "@babel/runtime-corejs3" "7.24.5"
@@ -3224,28 +3224,28 @@
     prompts "2.4.2"
     terminal-link "2.1.1"
 
-"@redwoodjs/auth-dbauth-web@7.6.1":
-  version "7.6.1"
-  resolved "https://registry.npmjs.org/@redwoodjs/auth-dbauth-web/-/auth-dbauth-web-7.6.1.tgz"
-  integrity sha512-/RYXa+vsWj0RC4fLdEbdv529GHI2mVxuWS8wjgxv7mSgtXktYpjc9aJVY7SzVTQaBvfWDsVp7+E2bzaL/78MvA==
+"@redwoodjs/auth-dbauth-web@7.6.2":
+  version "7.6.2"
+  resolved "https://registry.yarnpkg.com/@redwoodjs/auth-dbauth-web/-/auth-dbauth-web-7.6.2.tgz#8e21502805129b360183bfe3ddef2a04b3e70bf6"
+  integrity sha512-AKeZ3ahweVDcd6n4Xye+rG+ASOp7WMUGp+9fq7kbf2FQI+ch36TJFZZnvNyYXFEsfdApn4CkpIwghYTFy+y+Tw==
   dependencies:
     "@babel/runtime-corejs3" "7.24.5"
-    "@redwoodjs/auth" "7.6.1"
+    "@redwoodjs/auth" "7.6.2"
     "@simplewebauthn/browser" "7.4.0"
     core-js "3.37.1"
 
-"@redwoodjs/auth@7.6.1":
-  version "7.6.1"
-  resolved "https://registry.npmjs.org/@redwoodjs/auth/-/auth-7.6.1.tgz"
-  integrity sha512-DmSW9+2hF1Nj555V9DRmrwVwbA/cjcpYZFr2+pjljiLumOyGtAtYWTUnKpvPkXCXJh7fy/q00QrOeXlB1xQhmQ==
+"@redwoodjs/auth@7.6.2":
+  version "7.6.2"
+  resolved "https://registry.yarnpkg.com/@redwoodjs/auth/-/auth-7.6.2.tgz#e756965f2acdf51237617abb1c825e97ef6df880"
+  integrity sha512-8ywnJ0eWtXZ/rNjTQjel3phUd9vx1pV2Z44RuBtFsMSdWLRLE8fYxQJQLcYt1TxZDR/453UnpQNjKXKiU1hNXQ==
   dependencies:
     core-js "3.37.1"
     react "18.2.0"
 
-"@redwoodjs/babel-config@7.6.1":
-  version "7.6.1"
-  resolved "https://registry.npmjs.org/@redwoodjs/babel-config/-/babel-config-7.6.1.tgz"
-  integrity sha512-kH26IdEF9DHZJTd6fI9m2SIzg3Htlmz8Ywe1Mggq52ui7gPiwrCkT7HbHL5VQMKcra1LL+3m5hngp9FdwpvrgA==
+"@redwoodjs/babel-config@7.6.2":
+  version "7.6.2"
+  resolved "https://registry.yarnpkg.com/@redwoodjs/babel-config/-/babel-config-7.6.2.tgz#b3825dd0b52853506dcc4a5a25cbd0d508ee251a"
+  integrity sha512-rEmycRQBTs4t6h0H/S72o9wC7O01Ry/3IYZlzAVgm71dMy0Du8icQHHte3UPGa4xPy2ktguxpQPDtPLrDgyOkw==
   dependencies:
     "@babel/core" "^7.22.20"
     "@babel/parser" "^7.22.16"
@@ -3260,7 +3260,7 @@
     "@babel/register" "^7.22.15"
     "@babel/runtime-corejs3" "7.24.5"
     "@babel/traverse" "^7.22.20"
-    "@redwoodjs/project-config" "7.6.1"
+    "@redwoodjs/project-config" "7.6.2"
     babel-plugin-auto-import "1.1.0"
     babel-plugin-graphql-tag "3.3.0"
     babel-plugin-module-resolver "5.0.2"
@@ -3269,13 +3269,13 @@
     graphql "16.8.1"
     typescript "5.4.5"
 
-"@redwoodjs/cli-data-migrate@7.6.1":
-  version "7.6.1"
-  resolved "https://registry.npmjs.org/@redwoodjs/cli-data-migrate/-/cli-data-migrate-7.6.1.tgz"
-  integrity sha512-5+VSgm5BNAPyYeCmh0VxxxV/0Z0OT2rongSx+vvfenfibgcjzrMpmTLyhjfXwY6yPHqx/LwQMI2rnagh2wJnkA==
+"@redwoodjs/cli-data-migrate@7.6.2":
+  version "7.6.2"
+  resolved "https://registry.yarnpkg.com/@redwoodjs/cli-data-migrate/-/cli-data-migrate-7.6.2.tgz#b0100eaeb8e8f9876dad33ae42d37d1d5f1b56cf"
+  integrity sha512-CK9uw5IzRoF97EQE9EFLpAx3ILi+ztqiykYQ06xymNbs5xAnFuBBogYvjlxUMwP+6AaO9Q/oJrgW7bsvUlGOIw==
   dependencies:
-    "@redwoodjs/babel-config" "7.6.1"
-    "@redwoodjs/project-config" "7.6.1"
+    "@redwoodjs/babel-config" "7.6.2"
+    "@redwoodjs/project-config" "7.6.2"
     chalk "4.1.2"
     dotenv-defaults "5.0.2"
     execa "5.1.1"
@@ -3283,26 +3283,6 @@
     listr2 "6.6.1"
     terminal-link "2.1.1"
     yargs "17.7.2"
-
-"@redwoodjs/cli-helpers@7.6.1":
-  version "7.6.1"
-  resolved "https://registry.npmjs.org/@redwoodjs/cli-helpers/-/cli-helpers-7.6.1.tgz"
-  integrity sha512-4pMhfrSvroZh9/wdMZXRmL+Ec5SZXkhpZ5uEj7/DxZkuFsFDAYI6yXkGXF53KTjKfsXiyJUwbK1XiHiwSFz+Yw==
-  dependencies:
-    "@babel/core" "^7.22.20"
-    "@iarna/toml" "2.2.5"
-    "@opentelemetry/api" "1.8.0"
-    "@redwoodjs/project-config" "7.6.1"
-    "@redwoodjs/telemetry" "7.6.1"
-    chalk "4.1.2"
-    dotenv "16.4.5"
-    execa "5.1.1"
-    listr2 "6.6.1"
-    lodash "4.17.21"
-    pascalcase "1.0.0"
-    prettier "2.8.8"
-    prompts "2.4.2"
-    terminal-link "2.1.1"
 
 "@redwoodjs/cli-helpers@7.6.2":
   version "7.6.2"
@@ -3324,10 +3304,10 @@
     prompts "2.4.2"
     terminal-link "2.1.1"
 
-"@redwoodjs/cli@7.6.1":
-  version "7.6.1"
-  resolved "https://registry.npmjs.org/@redwoodjs/cli/-/cli-7.6.1.tgz"
-  integrity sha512-B5gtRAIMA0VihFhU3K6iU9gqvLX9yr11BNY4w+6/kyLFjKoE6U8EvNt8sE+HA7beBlAa10JGWBZkZcORyR0t2Q==
+"@redwoodjs/cli@7.6.2":
+  version "7.6.2"
+  resolved "https://registry.yarnpkg.com/@redwoodjs/cli/-/cli-7.6.2.tgz#b29e3d0e1ed3d5095f866aaa515c7202717269ef"
+  integrity sha512-8U+MmXw6tkSD9WZ054pklUWVeNskrs+pFjrjli2kexCozaxLL9R6vMlaQb9c0HdhiTZVaj6+FEk8PaJbGSuNzQ==
   dependencies:
     "@babel/runtime-corejs3" "7.24.5"
     "@iarna/toml" "2.2.5"
@@ -3338,15 +3318,15 @@
     "@opentelemetry/sdk-trace-node" "1.22.0"
     "@opentelemetry/semantic-conventions" "1.22.0"
     "@prisma/internals" "5.14.0"
-    "@redwoodjs/api-server" "7.6.1"
-    "@redwoodjs/cli-helpers" "7.6.1"
-    "@redwoodjs/fastify-web" "7.6.1"
-    "@redwoodjs/internal" "7.6.1"
-    "@redwoodjs/prerender" "7.6.1"
-    "@redwoodjs/project-config" "7.6.1"
-    "@redwoodjs/structure" "7.6.1"
-    "@redwoodjs/telemetry" "7.6.1"
-    "@redwoodjs/web-server" "7.6.1"
+    "@redwoodjs/api-server" "7.6.2"
+    "@redwoodjs/cli-helpers" "7.6.2"
+    "@redwoodjs/fastify-web" "7.6.2"
+    "@redwoodjs/internal" "7.6.2"
+    "@redwoodjs/prerender" "7.6.2"
+    "@redwoodjs/project-config" "7.6.2"
+    "@redwoodjs/structure" "7.6.2"
+    "@redwoodjs/telemetry" "7.6.2"
+    "@redwoodjs/web-server" "7.6.2"
     archiver "7.0.1"
     boxen "5.1.2"
     camelcase "6.3.0"
@@ -3384,25 +3364,25 @@
     uuid "9.0.1"
     yargs "17.7.2"
 
-"@redwoodjs/context@7.6.1":
-  version "7.6.1"
-  resolved "https://registry.npmjs.org/@redwoodjs/context/-/context-7.6.1.tgz"
-  integrity sha512-SWbGe1fq/JYb3xBIpZxTTGA4He0b/LKTCZY40iGLgBv7brQC4Rx/iZheX9tTgux/wQzfLbmsZYioq8UJSNLpPA==
+"@redwoodjs/context@7.6.2":
+  version "7.6.2"
+  resolved "https://registry.yarnpkg.com/@redwoodjs/context/-/context-7.6.2.tgz#8b00d64d2609821d4bf056fc52ee674a8e4bb29f"
+  integrity sha512-A9jaj4/8X4mQIYrv8N/2mqOWr9dqnmVR9b9uMdeSFP7BSe3fsbNv90RsZIQFEMJSOlaJ8XHRANjdCOXIiyhlQg==
 
-"@redwoodjs/core@7.6.1":
-  version "7.6.1"
-  resolved "https://registry.npmjs.org/@redwoodjs/core/-/core-7.6.1.tgz"
-  integrity sha512-GEnY+LAMrecaruL1DBkbvuk2eflnxmQC59KSBQSwdeNh7gTNITGswNjPiQV+FwJy54D+K4OX/GSoCMU/B1DwaA==
+"@redwoodjs/core@7.6.2":
+  version "7.6.2"
+  resolved "https://registry.yarnpkg.com/@redwoodjs/core/-/core-7.6.2.tgz#1a560778c5e575ed80957ca4ae15a468067da631"
+  integrity sha512-K8WkPmwHRipUI5Rc3R1AOxgtdlt9Zz3AKqAd1PR1G85EK/SmdVeyu2p11nNjAHE2bTNnXUOJzHczwdWnYmNvGw==
   dependencies:
     "@babel/cli" "7.24.5"
     "@babel/runtime-corejs3" "7.24.5"
     "@pmmmwh/react-refresh-webpack-plugin" "0.5.13"
-    "@redwoodjs/cli" "7.6.1"
-    "@redwoodjs/eslint-config" "7.6.1"
-    "@redwoodjs/internal" "7.6.1"
-    "@redwoodjs/project-config" "7.6.1"
-    "@redwoodjs/testing" "7.6.1"
-    "@redwoodjs/web-server" "7.6.1"
+    "@redwoodjs/cli" "7.6.2"
+    "@redwoodjs/eslint-config" "7.6.2"
+    "@redwoodjs/internal" "7.6.2"
+    "@redwoodjs/project-config" "7.6.2"
+    "@redwoodjs/testing" "7.6.2"
+    "@redwoodjs/web-server" "7.6.2"
     babel-loader "^9.1.3"
     babel-timing "0.9.1"
     copy-webpack-plugin "11.0.0"
@@ -3430,17 +3410,17 @@
     webpack-merge "5.10.0"
     webpack-retry-chunk-load-plugin "3.1.1"
 
-"@redwoodjs/eslint-config@7.6.1":
-  version "7.6.1"
-  resolved "https://registry.npmjs.org/@redwoodjs/eslint-config/-/eslint-config-7.6.1.tgz"
-  integrity sha512-g3BHrLqnq3tDgjpQ06aGwqh+7XjMuKiJeDw+hpMYlRaJmQZIIAR1z6s7xmXJ3sL8DyZHaL/Hu4L7tKj3yEMmWQ==
+"@redwoodjs/eslint-config@7.6.2":
+  version "7.6.2"
+  resolved "https://registry.yarnpkg.com/@redwoodjs/eslint-config/-/eslint-config-7.6.2.tgz#958e3b62890d0e40e0c467af2d7346f7fcd15c7f"
+  integrity sha512-NQCnkDIIHY404dUeSdoIPL9mY1cTQv2yB9ux9bXNRuCJpg2GRGgmJILdVMfpwtL8OwwJn53mECTWtD6gANY2bA==
   dependencies:
     "@babel/core" "^7.22.20"
     "@babel/eslint-parser" "7.24.5"
     "@babel/eslint-plugin" "7.24.5"
-    "@redwoodjs/eslint-plugin" "7.6.1"
-    "@redwoodjs/internal" "7.6.1"
-    "@redwoodjs/project-config" "7.6.1"
+    "@redwoodjs/eslint-plugin" "7.6.2"
+    "@redwoodjs/internal" "7.6.2"
+    "@redwoodjs/project-config" "7.6.2"
     "@typescript-eslint/eslint-plugin" "5.62.0"
     "@typescript-eslint/parser" "5.62.0"
     eslint "8.57.0"
@@ -3455,29 +3435,29 @@
     eslint-plugin-react-hooks "4.6.0"
     prettier "2.8.8"
 
-"@redwoodjs/eslint-plugin@7.6.1":
-  version "7.6.1"
-  resolved "https://registry.npmjs.org/@redwoodjs/eslint-plugin/-/eslint-plugin-7.6.1.tgz"
-  integrity sha512-E8uo51X2Um4U3nUW8Q9VcZXOIrJmF5eZkObtp9x3UYYgRM0h0dB6IfHFOECHHzOF8CdRrCCWdqCt5PnMrBxmcA==
+"@redwoodjs/eslint-plugin@7.6.2":
+  version "7.6.2"
+  resolved "https://registry.yarnpkg.com/@redwoodjs/eslint-plugin/-/eslint-plugin-7.6.2.tgz#4cee03845941e2f74ada079177d158eaadf690a2"
+  integrity sha512-1VsuM8lHaffG8c8u7ZrFahSdPHsa0jogKbM1NcyFLRyJkDsKBK7JBNojM7/7aMaFJX7pj7SFVLv3VuH1gV4rNQ==
   dependencies:
     "@typescript-eslint/utils" "5.62.0"
     eslint "8.57.0"
 
-"@redwoodjs/fastify-web@7.6.1":
-  version "7.6.1"
-  resolved "https://registry.npmjs.org/@redwoodjs/fastify-web/-/fastify-web-7.6.1.tgz"
-  integrity sha512-aYsBcRy/0W89O6dN+DvYRpvhGzSlQdWE3gKDHGgx5QZymu1WyVz1BCWF3J61lqk03mnv9VZS3tmwEoo3OAv3Yg==
+"@redwoodjs/fastify-web@7.6.2":
+  version "7.6.2"
+  resolved "https://registry.yarnpkg.com/@redwoodjs/fastify-web/-/fastify-web-7.6.2.tgz#357bca45f55b0e0c9da1905561382615e26b393b"
+  integrity sha512-nV0vyAP0yVPsikpZz456Ia05H4EAbj2x5+gDmmRSbthqWNrVg22Wbuz1GYeegq8js4LzRXKUDT0EGo2yZWFsWA==
   dependencies:
     "@fastify/http-proxy" "9.5.0"
     "@fastify/static" "6.12.0"
     "@fastify/url-data" "5.4.0"
-    "@redwoodjs/project-config" "7.6.1"
+    "@redwoodjs/project-config" "7.6.2"
     fast-glob "3.3.2"
 
-"@redwoodjs/forms@7.6.1":
-  version "7.6.1"
-  resolved "https://registry.npmjs.org/@redwoodjs/forms/-/forms-7.6.1.tgz"
-  integrity sha512-ol3/OeMaU4TDsa+z5dZo1g9bWXaHjE1CTJUcdOpZ3DFCvX22BJ5A0WyUrTHq7C5OlKpfVtGmyauKbUA6vFmcjg==
+"@redwoodjs/forms@7.6.2":
+  version "7.6.2"
+  resolved "https://registry.yarnpkg.com/@redwoodjs/forms/-/forms-7.6.2.tgz#70aab57720b5d844b293eb504ae60c051a56a339"
+  integrity sha512-ve3qF6SRp/yl2+Clh4c00LP1BWwIhHVHfPjO0K0edAsZ417ErcmdTsz8H/AB7b54k3Uc5nGjA08urcToYX1vfg==
   dependencies:
     "@babel/runtime-corejs3" "7.24.5"
     core-js "3.37.1"
@@ -3485,10 +3465,10 @@
     pascalcase "1.0.0"
     react-hook-form "7.51.4"
 
-"@redwoodjs/graphql-server@7.6.1":
-  version "7.6.1"
-  resolved "https://registry.npmjs.org/@redwoodjs/graphql-server/-/graphql-server-7.6.1.tgz"
-  integrity sha512-qloIMbrJ5ynAMZ/zju9WdKcyp6KnACCnzodwm3Yjsi1RDNfUvDrArAVZPmUS198GjsPU47UsoCnM/PBz2CuOLg==
+"@redwoodjs/graphql-server@7.6.2":
+  version "7.6.2"
+  resolved "https://registry.yarnpkg.com/@redwoodjs/graphql-server/-/graphql-server-7.6.2.tgz#c2fd8bdedbd0193b0bd0b18b50d113e8eefc95b5"
+  integrity sha512-ILd2bYG57EfOZGcgr1+l43Qwk/UYC7CNhTYOIs0mzRXH41qqzE6Jlv2pbnZxjBMmqdk2Q2FvcDk+i3wuuOveAQ==
   dependencies:
     "@babel/runtime-corejs3" "7.24.5"
     "@envelop/core" "5.0.1"
@@ -3502,8 +3482,8 @@
     "@graphql-tools/utils" "10.2.0"
     "@graphql-yoga/plugin-persisted-operations" "3.3.1"
     "@opentelemetry/api" "1.8.0"
-    "@redwoodjs/api" "7.6.1"
-    "@redwoodjs/context" "7.6.1"
+    "@redwoodjs/api" "7.6.2"
+    "@redwoodjs/context" "7.6.2"
     core-js "3.37.1"
     graphql "16.8.1"
     graphql-scalars "1.23.0"
@@ -3512,10 +3492,10 @@
     lodash "4.17.21"
     uuid "9.0.1"
 
-"@redwoodjs/internal@7.6.1":
-  version "7.6.1"
-  resolved "https://registry.npmjs.org/@redwoodjs/internal/-/internal-7.6.1.tgz"
-  integrity sha512-1nX1G0YlSzE/j01MCEiyr5lBhQjI3pgS5Os0HmSCPah0lijY7ll0bWpXLjxDfZ5g1ZMFwp5vH03dZhZlcGiXWQ==
+"@redwoodjs/internal@7.6.2":
+  version "7.6.2"
+  resolved "https://registry.yarnpkg.com/@redwoodjs/internal/-/internal-7.6.2.tgz#567532cf82fe311fef94b4c33b14469e02f3c392"
+  integrity sha512-e+YDkaikCyVSAzvoh3jSUuQqVSOKlhjT69sNVv2mJBkyZyQeNL97HOv6EKSjkPQQ7/trA2wErtOXHwt52LOEKA==
   dependencies:
     "@babel/core" "^7.22.20"
     "@babel/parser" "^7.22.16"
@@ -3535,10 +3515,10 @@
     "@graphql-codegen/typescript-react-apollo" "3.3.7"
     "@graphql-codegen/typescript-resolvers" "3.2.1"
     "@graphql-tools/documents" "1.0.0"
-    "@redwoodjs/babel-config" "7.6.1"
-    "@redwoodjs/graphql-server" "7.6.1"
-    "@redwoodjs/project-config" "7.6.1"
-    "@redwoodjs/router" "7.6.1"
+    "@redwoodjs/babel-config" "7.6.2"
+    "@redwoodjs/graphql-server" "7.6.2"
+    "@redwoodjs/project-config" "7.6.2"
+    "@redwoodjs/router" "7.6.2"
     "@sdl-codegen/node" "0.0.15"
     chalk "4.1.2"
     core-js "3.37.1"
@@ -3557,32 +3537,22 @@
     ts-node "10.9.2"
     typescript "5.4.5"
 
-"@redwoodjs/prerender@7.6.1":
-  version "7.6.1"
-  resolved "https://registry.npmjs.org/@redwoodjs/prerender/-/prerender-7.6.1.tgz"
-  integrity sha512-AyDVbT9G8ERSJip6gGI2VmpVPIKlRINIVZGS8RJgK11rBi6vTbtqsvaHXu+twjVinGAnor5qGwpFUPxdqhdQWA==
+"@redwoodjs/prerender@7.6.2":
+  version "7.6.2"
+  resolved "https://registry.yarnpkg.com/@redwoodjs/prerender/-/prerender-7.6.2.tgz#6e697198dca02179ebfdfc371fe4cb2c7a5c5d9d"
+  integrity sha512-77HBLTCiM+2tfSKcxf7ywwf33ewdn4y10KtQll6uKpRxJCDqpprhfB64Gi33BA8P+bKJ/K/VLJ1jWx9VN+TLJQ==
   dependencies:
     "@babel/runtime-corejs3" "7.24.5"
-    "@redwoodjs/project-config" "7.6.1"
-    "@redwoodjs/router" "7.6.1"
-    "@redwoodjs/structure" "7.6.1"
-    "@redwoodjs/web" "7.6.1"
+    "@redwoodjs/project-config" "7.6.2"
+    "@redwoodjs/router" "7.6.2"
+    "@redwoodjs/structure" "7.6.2"
+    "@redwoodjs/web" "7.6.2"
     "@whatwg-node/fetch" "0.9.17"
     babel-plugin-ignore-html-and-css-imports "0.1.0"
     cheerio "1.0.0-rc.12"
     core-js "3.37.1"
     graphql "16.8.1"
     mime-types "2.1.35"
-
-"@redwoodjs/project-config@7.6.1":
-  version "7.6.1"
-  resolved "https://registry.npmjs.org/@redwoodjs/project-config/-/project-config-7.6.1.tgz"
-  integrity sha512-5VRhOQZ7pEp20v70uasNg7HueUZJTHObRCwoYIghVuAI96X0BG29StzN5fjg9LZTjsZ5qKI7bae90d1tXfjYiA==
-  dependencies:
-    "@iarna/toml" "2.2.5"
-    deepmerge "4.3.1"
-    fast-glob "3.3.2"
-    string-env-interpolation "1.0.1"
 
 "@redwoodjs/project-config@7.6.2":
   version "7.6.2"
@@ -3594,44 +3564,14 @@
     fast-glob "3.3.2"
     string-env-interpolation "1.0.1"
 
-"@redwoodjs/router@7.6.1":
-  version "7.6.1"
-  resolved "https://registry.npmjs.org/@redwoodjs/router/-/router-7.6.1.tgz"
-  integrity sha512-DIxr+BUDKc5EL3P37XsnzVoTtinTuUNnN4JPS/KtoiP5UUJlkBZ7fqNrAmrNRvhdXqEt3DJIKfOh1Aoj8oUMzQ==
+"@redwoodjs/router@7.6.2":
+  version "7.6.2"
+  resolved "https://registry.yarnpkg.com/@redwoodjs/router/-/router-7.6.2.tgz#edab1c53a747726dc79782375f29bfc4c28eb57f"
+  integrity sha512-tekgOJrrYqJZ8abZ176TEn7xKN0LutaV61OB2uv3npiFCE8zjl0dGmSD3NUsSN9NqPpk5h+PjYsLXxPK40y1gA==
   dependencies:
     "@babel/runtime-corejs3" "7.24.5"
-    "@redwoodjs/auth" "7.6.1"
+    "@redwoodjs/auth" "7.6.2"
     core-js "3.37.1"
-
-"@redwoodjs/structure@7.6.1":
-  version "7.6.1"
-  resolved "https://registry.npmjs.org/@redwoodjs/structure/-/structure-7.6.1.tgz"
-  integrity sha512-e2rOzbOLFqi/ThH1Vf3Pd/Ik1ZRoEq/pYc3aw/bOYZFoz47PjupxEJvWtkdAQ3DxTln8AK+71+zwVLRQ1V1XcQ==
-  dependencies:
-    "@babel/runtime-corejs3" "7.24.5"
-    "@iarna/toml" "2.2.5"
-    "@prisma/internals" "5.14.0"
-    "@redwoodjs/project-config" "7.6.1"
-    "@types/line-column" "1.0.2"
-    camelcase "6.3.0"
-    core-js "3.37.1"
-    deepmerge "4.3.1"
-    dotenv-defaults "5.0.2"
-    enquirer "2.4.1"
-    fast-glob "3.3.2"
-    fs-extra "11.2.0"
-    graphql "16.8.1"
-    lazy-get-decorator "2.2.1"
-    line-column "1.0.2"
-    lodash "4.17.21"
-    lodash-decorators "6.0.1"
-    lru-cache "10.2.2"
-    proxyquire "2.1.3"
-    ts-morph "15.1.0"
-    vscode-languageserver "6.1.1"
-    vscode-languageserver-textdocument "1.0.11"
-    vscode-languageserver-types "3.17.5"
-    yargs-parser "21.1.1"
 
 "@redwoodjs/structure@7.6.2":
   version "7.6.2"
@@ -3663,20 +3603,6 @@
     vscode-languageserver-types "3.17.5"
     yargs-parser "21.1.1"
 
-"@redwoodjs/telemetry@7.6.1":
-  version "7.6.1"
-  resolved "https://registry.npmjs.org/@redwoodjs/telemetry/-/telemetry-7.6.1.tgz"
-  integrity sha512-SbTbPtu/AFOA0IIHhqK46bOcqqmi9SWhObMuHHxFa19SOdKz1Vv1u075vGcersuR21Lhkp+qV1/aUne5mbMmUg==
-  dependencies:
-    "@redwoodjs/project-config" "7.6.1"
-    "@redwoodjs/structure" "7.6.1"
-    "@whatwg-node/fetch" "0.9.17"
-    ci-info "4.0.0"
-    envinfo "7.13.0"
-    systeminformation "5.22.9"
-    uuid "9.0.1"
-    yargs "17.7.2"
-
 "@redwoodjs/telemetry@7.6.2":
   version "7.6.2"
   resolved "https://registry.npmjs.org/@redwoodjs/telemetry/-/telemetry-7.6.2.tgz"
@@ -3691,19 +3617,19 @@
     uuid "9.0.1"
     yargs "17.7.2"
 
-"@redwoodjs/testing@7.6.1":
-  version "7.6.1"
-  resolved "https://registry.npmjs.org/@redwoodjs/testing/-/testing-7.6.1.tgz"
-  integrity sha512-uTviBDVzhDlHm9VJ6MddgJ3fudvrzOaUOb4kUs5RssbRB9xRgOOf4MNAIZF0wX4m5Z97eZFgkZc9HgzMyqarLQ==
+"@redwoodjs/testing@7.6.2":
+  version "7.6.2"
+  resolved "https://registry.yarnpkg.com/@redwoodjs/testing/-/testing-7.6.2.tgz#423ca06120fa5ef34b022cd91e5ed5f96bf70e46"
+  integrity sha512-vbqbgI+VsHcx4Yi86RZzTiVKtEr/TmU+TisL2SF7UENfsNXNVeJRVymXqOaA8MuJVOtZxXzmv6rTThmmJsj72w==
   dependencies:
     "@babel/runtime-corejs3" "7.24.5"
-    "@redwoodjs/auth" "7.6.1"
-    "@redwoodjs/babel-config" "7.6.1"
-    "@redwoodjs/context" "7.6.1"
-    "@redwoodjs/graphql-server" "7.6.1"
-    "@redwoodjs/project-config" "7.6.1"
-    "@redwoodjs/router" "7.6.1"
-    "@redwoodjs/web" "7.6.1"
+    "@redwoodjs/auth" "7.6.2"
+    "@redwoodjs/babel-config" "7.6.2"
+    "@redwoodjs/context" "7.6.2"
+    "@redwoodjs/graphql-server" "7.6.2"
+    "@redwoodjs/project-config" "7.6.2"
+    "@redwoodjs/router" "7.6.2"
+    "@redwoodjs/web" "7.6.2"
     "@testing-library/jest-dom" "6.4.5"
     "@testing-library/react" "14.3.1"
     "@testing-library/user-event" "14.5.2"
@@ -3723,41 +3649,41 @@
     ts-toolbelt "9.6.0"
     whatwg-fetch "3.6.20"
 
-"@redwoodjs/vite@7.6.1":
-  version "7.6.1"
-  resolved "https://registry.npmjs.org/@redwoodjs/vite/-/vite-7.6.1.tgz"
-  integrity sha512-y9xmWf9weYKwyrstjVd2E8o9JbwREEV/7ycGoW54ynSbHnh6FXDa5CLwQC6NWropOUyTMaAiXYsTdHry6ibuPA==
+"@redwoodjs/vite@7.6.2":
+  version "7.6.2"
+  resolved "https://registry.yarnpkg.com/@redwoodjs/vite/-/vite-7.6.2.tgz#a2462f34260a8ed844f000106c65d17067f1d7d0"
+  integrity sha512-+zPXw13S8MAo8szL6MGslaPzfZkHose65hReJqNkNdYb3hGct9o7oElhOo0YTKZyryQPgI54GZgkBZwhz05JNQ==
   dependencies:
-    "@redwoodjs/babel-config" "7.6.1"
-    "@redwoodjs/internal" "7.6.1"
-    "@redwoodjs/project-config" "7.6.1"
+    "@redwoodjs/babel-config" "7.6.2"
+    "@redwoodjs/internal" "7.6.2"
+    "@redwoodjs/project-config" "7.6.2"
     "@vitejs/plugin-react" "4.2.1"
     buffer "6.0.3"
     core-js "3.37.1"
     vite "4.5.2"
     yargs-parser "21.1.1"
 
-"@redwoodjs/web-server@7.6.1":
-  version "7.6.1"
-  resolved "https://registry.npmjs.org/@redwoodjs/web-server/-/web-server-7.6.1.tgz"
-  integrity sha512-2m7Y5YZT6i+b84Jo2kBx8kkTphyzQIB9h62Nws+F8IQBjAbRwSfAtwqKvodnzdwhjqUnl4bsws72Cgdi3Ek33w==
+"@redwoodjs/web-server@7.6.2":
+  version "7.6.2"
+  resolved "https://registry.yarnpkg.com/@redwoodjs/web-server/-/web-server-7.6.2.tgz#01efc419d76baa75ba6ff869f1b20c8c8e3c6972"
+  integrity sha512-bHzGsrHD09NzcyI0HRaZXDPkUk6MjKz6PvBkLDTwBqHZi1JBE9W5DxJuV7bb4hY1ajuUjF1IW4huBOFCmb93AA==
   dependencies:
-    "@redwoodjs/fastify-web" "7.6.1"
-    "@redwoodjs/project-config" "7.6.1"
+    "@redwoodjs/fastify-web" "7.6.2"
+    "@redwoodjs/project-config" "7.6.2"
     chalk "4.1.2"
     dotenv-defaults "5.0.2"
     fastify "4.27.0"
     fs-extra "11.2.0"
     yargs "17.7.2"
 
-"@redwoodjs/web@7.6.1":
-  version "7.6.1"
-  resolved "https://registry.npmjs.org/@redwoodjs/web/-/web-7.6.1.tgz"
-  integrity sha512-2TKDTGWRTzTVpSaYNUozzBd5JoFWtPXbj7EPInlDncSlojZ1riE1pcJepVQ3IrnD/0pcB3mZ9t0Wuk9RJdn3RQ==
+"@redwoodjs/web@7.6.2":
+  version "7.6.2"
+  resolved "https://registry.yarnpkg.com/@redwoodjs/web/-/web-7.6.2.tgz#04968a333fa052526f8695e7a67a7ced07c8315c"
+  integrity sha512-YbVHki8slAKR5CX2c/BXINXwmdiWf3OuVMB6kg8bOY+iaenP+hsWBDFYb+jk/BmO3d3+LSZihT+jgSBlqdPC8w==
   dependencies:
     "@apollo/client" "3.9.9"
     "@babel/runtime-corejs3" "7.24.5"
-    "@redwoodjs/auth" "7.6.1"
+    "@redwoodjs/auth" "7.6.2"
     core-js "3.37.1"
     graphql "16.8.1"
     graphql-sse "2.5.3"
