@@ -7,7 +7,6 @@
 
 [web]
   title = "Redwood App"
-  outputPath = "C:\\Users\\felip\\Desktop\\treinamentoRW\\web"
   port = 8910
   apiUrl = "/api"
   includeEnvironmentVariables = [
