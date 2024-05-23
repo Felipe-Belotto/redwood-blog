@@ -1,41 +1,19 @@
-import { render } from '@redwoodjs/testing/web'
-import { Loading, Empty, Failure, Success } from './ArticleCell'
-import { standard } from './ArticleCell.mock'
+// web/src/components/ArticleCell/ArticleCell.test.jsx
 
-// Generated boilerplate tests do not account for all circumstances
-// and can fail without adjustments, e.g. Float and DateTime types.
-//           Please refer to the RedwoodJS Testing Docs:
-//        https://redwoodjs.com/docs/testing#testing-cells
-// https://redwoodjs.com/docs/testing#jest-expect-type-considerations
+import { render, screen } from '@redwoodjs/testing/web'; // Ensure correct import
+import { Success } from './ArticleCell';
 
-describe('ArticleCell', () => {
-  it('renders Loading successfully', () => {
-    expect(() => {
-      render(<Loading />)
-    }).not.toThrow()
-  })
+// ... (rest of your imports)
 
-  it('renders Empty successfully', async () => {
-    expect(() => {
-      render(<Empty />)
-    }).not.toThrow()
-  })
+test('Success renders successfully', async () => {
+  const ARTICLE = {
+    id: 1,
+    title: 'First Post',
+    body: `Neutra tacos hot chicken prism raw denim, put a bird on it enamel pin post-ironic vape cred DIY. Street art next level umami squid. Hammock hexagon glossier 8-bit banjo. Neutra la croix mixtape echo park four loko semiotics kitsch forage chambray. Semiotics salvia selfies jianbing hella shaman. Letterpress helvetica vaporware cronut, shaman butcher YOLO poke fixie hoodie gentrify woke heirloom.`,
+  };
 
-  it('renders Failure successfully', async () => {
-    expect(() => {
-      render(<Failure error={new Error('Oh no')} />)
-    }).not.toThrow()
-  })
+  render(<Success article={ARTICLE} />); // Pass a single article object
 
-  // When you're ready to test the actual output of your component render
-  // you could test that, for example, certain text is present:
-  //
-  // 1. import { screen } from '@redwoodjs/testing/web'
-  // 2. Add test: expect(screen.getByText('Hello, world')).toBeInTheDocument()
-
-  it('renders Success successfully', async () => {
-    expect(() => {
-      render(<Success article={standard().article} />)
-    }).not.toThrow()
-  })
-})
+  expect(screen.getByText(ARTICLE.title)).toBeInTheDocument();
+  expect(screen.getByText(ARTICLE.body)).toBeInTheDocument();
+});

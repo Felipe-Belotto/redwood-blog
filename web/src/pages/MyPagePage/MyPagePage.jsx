@@ -8,9 +8,11 @@ const MyPagePage = () => {
     <>
       <Metadata title="MyPage" description="MyPage page" />
 
-      <h1>Hello World</h1>
-
+      <section className='w-full flex justify-center p-8'>
       <ArticlesCell />
+
+      </section>
+
 
 
     </>

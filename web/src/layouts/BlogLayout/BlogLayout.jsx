@@ -9,16 +9,23 @@ const BlogLayout = ({ children }) => {
     logOut()
     window.reload(true)
   }
-
-  console.log(currentUser)
-
   return (
     <>
-      <header>
-        <div className="flex-between">
-          <h1>
+      <header className='w-full bg-purple-900 text-white' >
+        <div className="w-full flex justify-between py-4 px-8">
+          <h1 className='text-2xl'>
             <Link to={routes.home()}>Redwood Blog</Link>
           </h1>
+          <nav>
+          <ul className='flex gap-4'>
+            <li>
+              <Link to={routes.home()}>Home</Link>
+            </li>
+            <li>
+              <Link to={routes.contact()}>Contact</Link>
+            </li>
+          </ul>
+        </nav>
           {isAuthenticated ? (
             <div className="flex-between">
 
@@ -30,18 +37,8 @@ const BlogLayout = ({ children }) => {
             <Link to={routes.login()}>Login</Link>
           )}
         </div>
-        <nav>
-          <ul>
-            <li>
-              <Link to={routes.home()}>Home</Link>
-            </li>
-            <li>
-              <Link to={routes.contact()}>Contact</Link>
-            </li>
-          </ul>
-        </nav>
       </header>
-      <main>{children}</main>
+      <main className='w-full flex justify-center'>{children}</main>
     </>
   )
 }

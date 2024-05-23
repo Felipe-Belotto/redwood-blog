@@ -1,0 +1,646 @@
+🔎 checking possible migrations..
+Unable to find .eslintrc config file, skipping
+
+🔎 found a 'mdx-to-csf' migration:
+╭ Automigration detected ─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╮
+│                                                                                                                                                                                                                 │
+│   We've detected your project has one or more globs in your 'stories' config that matches .stories.mdx files:                                                                                                   │
+│   "C:/Users/felip/Documentos/projects/redwood-blog/web/src/**/*.stories.@(js|jsx|ts|tsx|mdx)"                                                                                                                   │
+│                                                                                                                                                                                                                 │
+│   In Storybook 7, we have deprecated defining stories in MDX files, and consequently have changed the suffix to simply .mdx. Since Storybook 8, we have removed the support of story definition in MDX files    │
+│   entirely. Therefore '.stories.mdx' files aren't supported anymore.                                                                                                                                            │
+│                                                                                                                                                                                                                 │
+│   Now, since Storybook 8.0, we have removed support for .stories.mdx files.                                                                                                                                     │
+│                                                                                                                                                                                                                 │
+│   We can automatically migrate your 'stories' config to include any .mdx file instead of just .stories.mdx.                                                                                                     │
+│   That would result in the following 'stories' config:                                                                                                                                                          │
+│   "C:/Users/felip/Documentos/projects/redwood-blog/web/src/**/*.@(mdx|stories.@(js|jsx|ts|tsx))"                                                                                                                │
+│                                                                                                                                                                                                                 │
+│   Additionally, we will run the 'mdx-to-csf' codemod for you, which tries to transform '*.stories.mdx' files to '*.stories.js' and '*.mdx' files.                                                               │
+│                                                                                                                                                                                                                 │
+│   To learn more about this change, see: https://storybook.js.org/docs/migration-guide#storiesmdx-to-mdxcsf                                                                                                      │
+│                                                                                                                                                                                                                 │
+╰─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+? Do you want to run the 'mdx-to-csf' migration on your project? » (Y/n)√ Do you want to run the 'mdx-to-csf' migration on your project? ... yes
+✅ Setting 'stories' config:
+[
+  "C:/Users/felip/Documentos/projects/redwood-blog/web/src/**/*.@(mdx|stories.@(js|jsx|ts|tsx))"
+]
+? Please enter the glob for your MDX stories » ./src/**/*.stories.mdx√ Please enter the glob for your MDX stories ... ./src/**/*.stories.mdx
+=> Applying mdx-to-csf: 0 files
+=> No matching files for glob: ./src/**/*.stories.mdx
+CSF Parsing error: Expected 'ObjectExpression' but found 'CallExpression' instead in 'CallExpression'.
+
+The migration successfully updated your 'stories' config to include any .mdx file instead of just .stories.mdx.
+
+It also ran the 'mdx-to-csf' codemod to convert your MDX stories to CSF format.
+This codemod is not perfect however, so you may need to manually fix any issues it couldn't handle.
+✅ ran mdx-to-csf migration
+
+⚠️  failed to check fix autodocsTrue
+
+Error: Unable to find or evaluate node_modules\@redwoodjs\testing\config\storybook\main.js: SB_CORE-SERVER_0007 (MainFileEvaluationError): Storybook couldn't evaluate your node_modules\@redwoodjs\testing\config\storybook\main.js file.
+
+\node_modules\@redwoodjs\testing\config\storybook\main.js:204
+export const stories = ['C:/Users/felip/Documentos/projects/redwood-blog/web/src/**/*.@(mdx|stories.@(js|jsx|ts|tsx))'];
+^^^^^^
+
+SyntaxError: Unexpected token 'export'
+    at wrapSafe (node:internal/modules/cjs/loader:1281:20)
+    at Module._compile (node:internal/modules/cjs/loader:1321:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)
+    at Object.newLoader (C:\Users\felip\AppData\Local\npm-cache\_npx\bc7e1e37fcb46ffc\node_modules\esbuild-register\dist\node.js:2262:9)
+    at extensions..js (C:\Users\felip\AppData\Local\npm-cache\_npx\bc7e1e37fcb46ffc\node_modules\esbuild-register\dist\node.js:4838:24)
+    at Module.load (node:internal/modules/cjs/loader:1208:32)
+    at Module._load (node:internal/modules/cjs/loader:1024:12)
+    at Module.require (node:internal/modules/cjs/loader:1233:19)
+    at require (node:internal/modules/helpers:179:18)
+    at interopRequireDefault (C:\Users\felip\AppData\Local\npm-cache\_npx\bc7e1e37fcb46ffc\node_modules\@storybook\core-common\dist\index.js:6:21)
+    at getStorybookData (C:\Users\felip\AppData\Local\npm-cache\_npx\bc7e1e37fcb46ffc\node_modules\@storybook\cli\dist\generate.js:185:4560)
+    at async runFixes (C:\Users\felip\AppData\Local\npm-cache\_npx\bc7e1e37fcb46ffc\node_modules\@storybook\cli\dist\generate.js:634:2652)
+    at async automigrate (C:\Users\felip\AppData\Local\npm-cache\_npx\bc7e1e37fcb46ffc\node_modules\@storybook\cli\dist\generate.js:634:1629)
+    at async doUpgrade (C:\Users\felip\AppData\Local\npm-cache\_npx\bc7e1e37fcb46ffc\node_modules\@storybook\cli\dist\generate.js:650:1628)
+    at async withTelemetry (C:\Users\felip\AppData\Local\npm-cache\_npx\bc7e1e37fcb46ffc\node_modules\@storybook\core-server\dist\index.js:28:3599)
+    at async upgrade (C:\Users\felip\AppData\Local\npm-cache\_npx\bc7e1e37fcb46ffc\node_modules\@storybook\cli\dist\generate.js:650:2097)
+
+⚠️  failed to check fix angular-builders-multiproject
+
+Error: Unable to find or evaluate node_modules\@redwoodjs\testing\config\storybook\main.js: SB_CORE-SERVER_0007 (MainFileEvaluationError): Storybook couldn't evaluate your node_modules\@redwoodjs\testing\config\storybook\main.js file.
+
+\node_modules\@redwoodjs\testing\config\storybook\main.js:204
+export const stories = ['C:/Users/felip/Documentos/projects/redwood-blog/web/src/**/*.@(mdx|stories.@(js|jsx|ts|tsx))'];
+^^^^^^
+
+SyntaxError: Unexpected token 'export'
+    at wrapSafe (node:internal/modules/cjs/loader:1281:20)
+    at Module._compile (node:internal/modules/cjs/loader:1321:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)
+    at Object.newLoader (C:\Users\felip\AppData\Local\npm-cache\_npx\bc7e1e37fcb46ffc\node_modules\esbuild-register\dist\node.js:2262:9)
+    at extensions..js (C:\Users\felip\AppData\Local\npm-cache\_npx\bc7e1e37fcb46ffc\node_modules\esbuild-register\dist\node.js:4838:24)
+    at Module.load (node:internal/modules/cjs/loader:1208:32)
+    at Module._load (node:internal/modules/cjs/loader:1024:12)
+    at Module.require (node:internal/modules/cjs/loader:1233:19)
+    at require (node:internal/modules/helpers:179:18)
+    at interopRequireDefault (C:\Users\felip\AppData\Local\npm-cache\_npx\bc7e1e37fcb46ffc\node_modules\@storybook\core-common\dist\index.js:6:21)
+    at getStorybookData (C:\Users\felip\AppData\Local\npm-cache\_npx\bc7e1e37fcb46ffc\node_modules\@storybook\cli\dist\generate.js:185:4560)
+    at async runFixes (C:\Users\felip\AppData\Local\npm-cache\_npx\bc7e1e37fcb46ffc\node_modules\@storybook\cli\dist\generate.js:634:2652)
+    at async automigrate (C:\Users\felip\AppData\Local\npm-cache\_npx\bc7e1e37fcb46ffc\node_modules\@storybook\cli\dist\generate.js:634:1629)
+    at async doUpgrade (C:\Users\felip\AppData\Local\npm-cache\_npx\bc7e1e37fcb46ffc\node_modules\@storybook\cli\dist\generate.js:650:1628)
+    at async withTelemetry (C:\Users\felip\AppData\Local\npm-cache\_npx\bc7e1e37fcb46ffc\node_modules\@storybook\core-server\dist\index.js:28:3599)
+    at async upgrade (C:\Users\felip\AppData\Local\npm-cache\_npx\bc7e1e37fcb46ffc\node_modules\@storybook\cli\dist\generate.js:650:2097)
+
+⚠️  failed to check fix angular-builders
+
+Error: Unable to find or evaluate node_modules\@redwoodjs\testing\config\storybook\main.js: SB_CORE-SERVER_0007 (MainFileEvaluationError): Storybook couldn't evaluate your node_modules\@redwoodjs\testing\config\storybook\main.js file.
+
+\node_modules\@redwoodjs\testing\config\storybook\main.js:204
+export const stories = ['C:/Users/felip/Documentos/projects/redwood-blog/web/src/**/*.@(mdx|stories.@(js|jsx|ts|tsx))'];
+^^^^^^
+
+SyntaxError: Unexpected token 'export'
+    at wrapSafe (node:internal/modules/cjs/loader:1281:20)
+    at Module._compile (node:internal/modules/cjs/loader:1321:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)
+    at Object.newLoader (C:\Users\felip\AppData\Local\npm-cache\_npx\bc7e1e37fcb46ffc\node_modules\esbuild-register\dist\node.js:2262:9)
+    at extensions..js (C:\Users\felip\AppData\Local\npm-cache\_npx\bc7e1e37fcb46ffc\node_modules\esbuild-register\dist\node.js:4838:24)
+    at Module.load (node:internal/modules/cjs/loader:1208:32)
+    at Module._load (node:internal/modules/cjs/loader:1024:12)
+    at Module.require (node:internal/modules/cjs/loader:1233:19)
+    at require (node:internal/modules/helpers:179:18)
+    at interopRequireDefault (C:\Users\felip\AppData\Local\npm-cache\_npx\bc7e1e37fcb46ffc\node_modules\@storybook\core-common\dist\index.js:6:21)
+    at getStorybookData (C:\Users\felip\AppData\Local\npm-cache\_npx\bc7e1e37fcb46ffc\node_modules\@storybook\cli\dist\generate.js:185:4560)
+    at async runFixes (C:\Users\felip\AppData\Local\npm-cache\_npx\bc7e1e37fcb46ffc\node_modules\@storybook\cli\dist\generate.js:634:2652)
+    at async automigrate (C:\Users\felip\AppData\Local\npm-cache\_npx\bc7e1e37fcb46ffc\node_modules\@storybook\cli\dist\generate.js:634:1629)
+    at async doUpgrade (C:\Users\felip\AppData\Local\npm-cache\_npx\bc7e1e37fcb46ffc\node_modules\@storybook\cli\dist\generate.js:650:1628)
+    at async withTelemetry (C:\Users\felip\AppData\Local\npm-cache\_npx\bc7e1e37fcb46ffc\node_modules\@storybook\core-server\dist\index.js:28:3599)
+    at async upgrade (C:\Users\felip\AppData\Local\npm-cache\_npx\bc7e1e37fcb46ffc\node_modules\@storybook\cli\dist\generate.js:650:2097)
+
+⚠️  failed to check fix wrap-require
+
+Error: Unable to find or evaluate node_modules\@redwoodjs\testing\config\storybook\main.js: SB_CORE-SERVER_0007 (MainFileEvaluationError): Storybook couldn't evaluate your node_modules\@redwoodjs\testing\config\storybook\main.js file.
+
+\node_modules\@redwoodjs\testing\config\storybook\main.js:204
+export const stories = ['C:/Users/felip/Documentos/projects/redwood-blog/web/src/**/*.@(mdx|stories.@(js|jsx|ts|tsx))'];
+^^^^^^
+
+SyntaxError: Unexpected token 'export'
+    at wrapSafe (node:internal/modules/cjs/loader:1281:20)
+    at Module._compile (node:internal/modules/cjs/loader:1321:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)
+    at Object.newLoader (C:\Users\felip\AppData\Local\npm-cache\_npx\bc7e1e37fcb46ffc\node_modules\esbuild-register\dist\node.js:2262:9)
+    at extensions..js (C:\Users\felip\AppData\Local\npm-cache\_npx\bc7e1e37fcb46ffc\node_modules\esbuild-register\dist\node.js:4838:24)
+    at Module.load (node:internal/modules/cjs/loader:1208:32)
+    at Module._load (node:internal/modules/cjs/loader:1024:12)
+    at Module.require (node:internal/modules/cjs/loader:1233:19)
+    at require (node:internal/modules/helpers:179:18)
+    at interopRequireDefault (C:\Users\felip\AppData\Local\npm-cache\_npx\bc7e1e37fcb46ffc\node_modules\@storybook\core-common\dist\index.js:6:21)
+    at getStorybookData (C:\Users\felip\AppData\Local\npm-cache\_npx\bc7e1e37fcb46ffc\node_modules\@storybook\cli\dist\generate.js:185:4560)
+    at async runFixes (C:\Users\felip\AppData\Local\npm-cache\_npx\bc7e1e37fcb46ffc\node_modules\@storybook\cli\dist\generate.js:634:2652)
+    at async automigrate (C:\Users\felip\AppData\Local\npm-cache\_npx\bc7e1e37fcb46ffc\node_modules\@storybook\cli\dist\generate.js:634:1629)
+    at async doUpgrade (C:\Users\felip\AppData\Local\npm-cache\_npx\bc7e1e37fcb46ffc\node_modules\@storybook\cli\dist\generate.js:650:1628)
+    at async withTelemetry (C:\Users\felip\AppData\Local\npm-cache\_npx\bc7e1e37fcb46ffc\node_modules\@storybook\core-server\dist\index.js:28:3599)
+    at async upgrade (C:\Users\felip\AppData\Local\npm-cache\_npx\bc7e1e37fcb46ffc\node_modules\@storybook\cli\dist\generate.js:650:2097)
+
+⚠️  failed to check fix react-docgen
+
+Error: Unable to find or evaluate node_modules\@redwoodjs\testing\config\storybook\main.js: SB_CORE-SERVER_0007 (MainFileEvaluationError): Storybook couldn't evaluate your node_modules\@redwoodjs\testing\config\storybook\main.js file.
+
+\node_modules\@redwoodjs\testing\config\storybook\main.js:204
+export const stories = ['C:/Users/felip/Documentos/projects/redwood-blog/web/src/**/*.@(mdx|stories.@(js|jsx|ts|tsx))'];
+^^^^^^
+
+SyntaxError: Unexpected token 'export'
+    at wrapSafe (node:internal/modules/cjs/loader:1281:20)
+    at Module._compile (node:internal/modules/cjs/loader:1321:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)
+    at Object.newLoader (C:\Users\felip\AppData\Local\npm-cache\_npx\bc7e1e37fcb46ffc\node_modules\esbuild-register\dist\node.js:2262:9)
+    at extensions..js (C:\Users\felip\AppData\Local\npm-cache\_npx\bc7e1e37fcb46ffc\node_modules\esbuild-register\dist\node.js:4838:24)
+    at Module.load (node:internal/modules/cjs/loader:1208:32)
+    at Module._load (node:internal/modules/cjs/loader:1024:12)
+    at Module.require (node:internal/modules/cjs/loader:1233:19)
+    at require (node:internal/modules/helpers:179:18)
+    at interopRequireDefault (C:\Users\felip\AppData\Local\npm-cache\_npx\bc7e1e37fcb46ffc\node_modules\@storybook\core-common\dist\index.js:6:21)
+    at getStorybookData (C:\Users\felip\AppData\Local\npm-cache\_npx\bc7e1e37fcb46ffc\node_modules\@storybook\cli\dist\generate.js:185:4560)
+    at async runFixes (C:\Users\felip\AppData\Local\npm-cache\_npx\bc7e1e37fcb46ffc\node_modules\@storybook\cli\dist\generate.js:634:2652)
+    at async automigrate (C:\Users\felip\AppData\Local\npm-cache\_npx\bc7e1e37fcb46ffc\node_modules\@storybook\cli\dist\generate.js:634:1629)
+    at async doUpgrade (C:\Users\felip\AppData\Local\npm-cache\_npx\bc7e1e37fcb46ffc\node_modules\@storybook\cli\dist\generate.js:650:1628)
+    at async withTelemetry (C:\Users\felip\AppData\Local\npm-cache\_npx\bc7e1e37fcb46ffc\node_modules\@storybook\core-server\dist\index.js:28:3599)
+    at async upgrade (C:\Users\felip\AppData\Local\npm-cache\_npx\bc7e1e37fcb46ffc\node_modules\@storybook\cli\dist\generate.js:650:2097)
+
+⚠️  failed to check fix storyshots
+
+Error: Unable to find or evaluate node_modules\@redwoodjs\testing\config\storybook\main.js: SB_CORE-SERVER_0007 (MainFileEvaluationError): Storybook couldn't evaluate your node_modules\@redwoodjs\testing\config\storybook\main.js file.
+
+\node_modules\@redwoodjs\testing\config\storybook\main.js:204
+export const stories = ['C:/Users/felip/Documentos/projects/redwood-blog/web/src/**/*.@(mdx|stories.@(js|jsx|ts|tsx))'];
+^^^^^^
+
+SyntaxError: Unexpected token 'export'
+    at wrapSafe (node:internal/modules/cjs/loader:1281:20)
+    at Module._compile (node:internal/modules/cjs/loader:1321:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)
+    at Object.newLoader (C:\Users\felip\AppData\Local\npm-cache\_npx\bc7e1e37fcb46ffc\node_modules\esbuild-register\dist\node.js:2262:9)
+    at extensions..js (C:\Users\felip\AppData\Local\npm-cache\_npx\bc7e1e37fcb46ffc\node_modules\esbuild-register\dist\node.js:4838:24)
+    at Module.load (node:internal/modules/cjs/loader:1208:32)
+    at Module._load (node:internal/modules/cjs/loader:1024:12)
+    at Module.require (node:internal/modules/cjs/loader:1233:19)
+    at require (node:internal/modules/helpers:179:18)
+    at interopRequireDefault (C:\Users\felip\AppData\Local\npm-cache\_npx\bc7e1e37fcb46ffc\node_modules\@storybook\core-common\dist\index.js:6:21)
+    at getStorybookData (C:\Users\felip\AppData\Local\npm-cache\_npx\bc7e1e37fcb46ffc\node_modules\@storybook\cli\dist\generate.js:185:4560)
+    at async runFixes (C:\Users\felip\AppData\Local\npm-cache\_npx\bc7e1e37fcb46ffc\node_modules\@storybook\cli\dist\generate.js:634:2652)
+    at async automigrate (C:\Users\felip\AppData\Local\npm-cache\_npx\bc7e1e37fcb46ffc\node_modules\@storybook\cli\dist\generate.js:634:1629)
+    at async doUpgrade (C:\Users\felip\AppData\Local\npm-cache\_npx\bc7e1e37fcb46ffc\node_modules\@storybook\cli\dist\generate.js:650:1628)
+    at async withTelemetry (C:\Users\felip\AppData\Local\npm-cache\_npx\bc7e1e37fcb46ffc\node_modules\@storybook\core-server\dist\index.js:28:3599)
+    at async upgrade (C:\Users\felip\AppData\Local\npm-cache\_npx\bc7e1e37fcb46ffc\node_modules\@storybook\cli\dist\generate.js:650:2097)
+
+⚠️  failed to check fix remove-react-dependency
+
+Error: Unable to find or evaluate node_modules\@redwoodjs\testing\config\storybook\main.js: SB_CORE-SERVER_0007 (MainFileEvaluationError): Storybook couldn't evaluate your node_modules\@redwoodjs\testing\config\storybook\main.js file.
+
+\node_modules\@redwoodjs\testing\config\storybook\main.js:204
+export const stories = ['C:/Users/felip/Documentos/projects/redwood-blog/web/src/**/*.@(mdx|stories.@(js|jsx|ts|tsx))'];
+^^^^^^
+
+SyntaxError: Unexpected token 'export'
+    at wrapSafe (node:internal/modules/cjs/loader:1281:20)
+    at Module._compile (node:internal/modules/cjs/loader:1321:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)
+    at Object.newLoader (C:\Users\felip\AppData\Local\npm-cache\_npx\bc7e1e37fcb46ffc\node_modules\esbuild-register\dist\node.js:2262:9)
+    at extensions..js (C:\Users\felip\AppData\Local\npm-cache\_npx\bc7e1e37fcb46ffc\node_modules\esbuild-register\dist\node.js:4838:24)
+    at Module.load (node:internal/modules/cjs/loader:1208:32)
+    at Module._load (node:internal/modules/cjs/loader:1024:12)
+    at Module.require (node:internal/modules/cjs/loader:1233:19)
+    at require (node:internal/modules/helpers:179:18)
+    at interopRequireDefault (C:\Users\felip\AppData\Local\npm-cache\_npx\bc7e1e37fcb46ffc\node_modules\@storybook\core-common\dist\index.js:6:21)
+    at getStorybookData (C:\Users\felip\AppData\Local\npm-cache\_npx\bc7e1e37fcb46ffc\node_modules\@storybook\cli\dist\generate.js:185:4560)
+    at async runFixes (C:\Users\felip\AppData\Local\npm-cache\_npx\bc7e1e37fcb46ffc\node_modules\@storybook\cli\dist\generate.js:634:2652)
+    at async automigrate (C:\Users\felip\AppData\Local\npm-cache\_npx\bc7e1e37fcb46ffc\node_modules\@storybook\cli\dist\generate.js:634:1629)
+    at async doUpgrade (C:\Users\felip\AppData\Local\npm-cache\_npx\bc7e1e37fcb46ffc\node_modules\@storybook\cli\dist\generate.js:650:1628)
+    at async withTelemetry (C:\Users\felip\AppData\Local\npm-cache\_npx\bc7e1e37fcb46ffc\node_modules\@storybook\core-server\dist\index.js:28:3599)
+    at async upgrade (C:\Users\felip\AppData\Local\npm-cache\_npx\bc7e1e37fcb46ffc\node_modules\@storybook\cli\dist\generate.js:650:2097)
+
+⚠️  failed to check fix remove-legacy-mdx1
+
+Error: Unable to find or evaluate node_modules\@redwoodjs\testing\config\storybook\main.js: SB_CORE-SERVER_0007 (MainFileEvaluationError): Storybook couldn't evaluate your node_modules\@redwoodjs\testing\config\storybook\main.js file.
+
+\node_modules\@redwoodjs\testing\config\storybook\main.js:204
+export const stories = ['C:/Users/felip/Documentos/projects/redwood-blog/web/src/**/*.@(mdx|stories.@(js|jsx|ts|tsx))'];
+^^^^^^
+
+SyntaxError: Unexpected token 'export'
+    at wrapSafe (node:internal/modules/cjs/loader:1281:20)
+    at Module._compile (node:internal/modules/cjs/loader:1321:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)
+    at Object.newLoader (C:\Users\felip\AppData\Local\npm-cache\_npx\bc7e1e37fcb46ffc\node_modules\esbuild-register\dist\node.js:2262:9)
+    at extensions..js (C:\Users\felip\AppData\Local\npm-cache\_npx\bc7e1e37fcb46ffc\node_modules\esbuild-register\dist\node.js:4838:24)
+    at Module.load (node:internal/modules/cjs/loader:1208:32)
+    at Module._load (node:internal/modules/cjs/loader:1024:12)
+    at Module.require (node:internal/modules/cjs/loader:1233:19)
+    at require (node:internal/modules/helpers:179:18)
+    at interopRequireDefault (C:\Users\felip\AppData\Local\npm-cache\_npx\bc7e1e37fcb46ffc\node_modules\@storybook\core-common\dist\index.js:6:21)
+    at getStorybookData (C:\Users\felip\AppData\Local\npm-cache\_npx\bc7e1e37fcb46ffc\node_modules\@storybook\cli\dist\generate.js:185:4560)
+    at async runFixes (C:\Users\felip\AppData\Local\npm-cache\_npx\bc7e1e37fcb46ffc\node_modules\@storybook\cli\dist\generate.js:634:2652)
+    at async automigrate (C:\Users\felip\AppData\Local\npm-cache\_npx\bc7e1e37fcb46ffc\node_modules\@storybook\cli\dist\generate.js:634:1629)
+    at async doUpgrade (C:\Users\felip\AppData\Local\npm-cache\_npx\bc7e1e37fcb46ffc\node_modules\@storybook\cli\dist\generate.js:650:1628)
+    at async withTelemetry (C:\Users\felip\AppData\Local\npm-cache\_npx\bc7e1e37fcb46ffc\node_modules\@storybook\core-server\dist\index.js:28:3599)
+    at async upgrade (C:\Users\felip\AppData\Local\npm-cache\_npx\bc7e1e37fcb46ffc\node_modules\@storybook\cli\dist\generate.js:650:2097)
+
+⚠️  failed to check fix webpack5-compiler-setup
+
+Error: Unable to find or evaluate node_modules\@redwoodjs\testing\config\storybook\main.js: SB_CORE-SERVER_0007 (MainFileEvaluationError): Storybook couldn't evaluate your node_modules\@redwoodjs\testing\config\storybook\main.js file.
+
+\node_modules\@redwoodjs\testing\config\storybook\main.js:204
+export const stories = ['C:/Users/felip/Documentos/projects/redwood-blog/web/src/**/*.@(mdx|stories.@(js|jsx|ts|tsx))'];
+^^^^^^
+
+SyntaxError: Unexpected token 'export'
+    at wrapSafe (node:internal/modules/cjs/loader:1281:20)
+    at Module._compile (node:internal/modules/cjs/loader:1321:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)
+    at Object.newLoader (C:\Users\felip\AppData\Local\npm-cache\_npx\bc7e1e37fcb46ffc\node_modules\esbuild-register\dist\node.js:2262:9)
+    at extensions..js (C:\Users\felip\AppData\Local\npm-cache\_npx\bc7e1e37fcb46ffc\node_modules\esbuild-register\dist\node.js:4838:24)
+    at Module.load (node:internal/modules/cjs/loader:1208:32)
+    at Module._load (node:internal/modules/cjs/loader:1024:12)
+    at Module.require (node:internal/modules/cjs/loader:1233:19)
+    at require (node:internal/modules/helpers:179:18)
+    at interopRequireDefault (C:\Users\felip\AppData\Local\npm-cache\_npx\bc7e1e37fcb46ffc\node_modules\@storybook\core-common\dist\index.js:6:21)
+    at getStorybookData (C:\Users\felip\AppData\Local\npm-cache\_npx\bc7e1e37fcb46ffc\node_modules\@storybook\cli\dist\generate.js:185:4560)
+    at async runFixes (C:\Users\felip\AppData\Local\npm-cache\_npx\bc7e1e37fcb46ffc\node_modules\@storybook\cli\dist\generate.js:634:2652)
+    at async automigrate (C:\Users\felip\AppData\Local\npm-cache\_npx\bc7e1e37fcb46ffc\node_modules\@storybook\cli\dist\generate.js:634:1629)
+    at async doUpgrade (C:\Users\felip\AppData\Local\npm-cache\_npx\bc7e1e37fcb46ffc\node_modules\@storybook\cli\dist\generate.js:650:1628)
+    at async withTelemetry (C:\Users\felip\AppData\Local\npm-cache\_npx\bc7e1e37fcb46ffc\node_modules\@storybook\core-server\dist\index.js:28:3599)
+    at async upgrade (C:\Users\felip\AppData\Local\npm-cache\_npx\bc7e1e37fcb46ffc\node_modules\@storybook\cli\dist\generate.js:650:2097)
+
+⚠️  failed to check fix mdx1to3
+
+Error: Unable to find or evaluate node_modules\@redwoodjs\testing\config\storybook\main.js: SB_CORE-SERVER_0007 (MainFileEvaluationError): Storybook couldn't evaluate your node_modules\@redwoodjs\testing\config\storybook\main.js file.
+
+\node_modules\@redwoodjs\testing\config\storybook\main.js:204
+export const stories = ['C:/Users/felip/Documentos/projects/redwood-blog/web/src/**/*.@(mdx|stories.@(js|jsx|ts|tsx))'];
+^^^^^^
+
+SyntaxError: Unexpected token 'export'
+    at wrapSafe (node:internal/modules/cjs/loader:1281:20)
+    at Module._compile (node:internal/modules/cjs/loader:1321:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)
+    at Object.newLoader (C:\Users\felip\AppData\Local\npm-cache\_npx\bc7e1e37fcb46ffc\node_modules\esbuild-register\dist\node.js:2262:9)
+    at extensions..js (C:\Users\felip\AppData\Local\npm-cache\_npx\bc7e1e37fcb46ffc\node_modules\esbuild-register\dist\node.js:4838:24)
+    at Module.load (node:internal/modules/cjs/loader:1208:32)
+    at Module._load (node:internal/modules/cjs/loader:1024:12)
+    at Module.require (node:internal/modules/cjs/loader:1233:19)
+    at require (node:internal/modules/helpers:179:18)
+    at interopRequireDefault (C:\Users\felip\AppData\Local\npm-cache\_npx\bc7e1e37fcb46ffc\node_modules\@storybook\core-common\dist\index.js:6:21)
+    at getStorybookData (C:\Users\felip\AppData\Local\npm-cache\_npx\bc7e1e37fcb46ffc\node_modules\@storybook\cli\dist\generate.js:185:4560)
+    at async runFixes (C:\Users\felip\AppData\Local\npm-cache\_npx\bc7e1e37fcb46ffc\node_modules\@storybook\cli\dist\generate.js:634:2652)
+    at async automigrate (C:\Users\felip\AppData\Local\npm-cache\_npx\bc7e1e37fcb46ffc\node_modules\@storybook\cli\dist\generate.js:634:1629)
+    at async doUpgrade (C:\Users\felip\AppData\Local\npm-cache\_npx\bc7e1e37fcb46ffc\node_modules\@storybook\cli\dist\generate.js:650:1628)
+    at async withTelemetry (C:\Users\felip\AppData\Local\npm-cache\_npx\bc7e1e37fcb46ffc\node_modules\@storybook\core-server\dist\index.js:28:3599)
+    at async upgrade (C:\Users\felip\AppData\Local\npm-cache\_npx\bc7e1e37fcb46ffc\node_modules\@storybook\cli\dist\generate.js:650:2097)
+
+⚠️  failed to check fix upgradeStorybookRelatedDependencies
+
+Error: Unable to find or evaluate node_modules\@redwoodjs\testing\config\storybook\main.js: SB_CORE-SERVER_0007 (MainFileEvaluationError): Storybook couldn't evaluate your node_modules\@redwoodjs\testing\config\storybook\main.js file.
+
+\node_modules\@redwoodjs\testing\config\storybook\main.js:204
+export const stories = ['C:/Users/felip/Documentos/projects/redwood-blog/web/src/**/*.@(mdx|stories.@(js|jsx|ts|tsx))'];
+^^^^^^
+
+SyntaxError: Unexpected token 'export'
+    at wrapSafe (node:internal/modules/cjs/loader:1281:20)
+    at Module._compile (node:internal/modules/cjs/loader:1321:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)
+    at Object.newLoader (C:\Users\felip\AppData\Local\npm-cache\_npx\bc7e1e37fcb46ffc\node_modules\esbuild-register\dist\node.js:2262:9)
+    at extensions..js (C:\Users\felip\AppData\Local\npm-cache\_npx\bc7e1e37fcb46ffc\node_modules\esbuild-register\dist\node.js:4838:24)
+    at Module.load (node:internal/modules/cjs/loader:1208:32)
+    at Module._load (node:internal/modules/cjs/loader:1024:12)
+    at Module.require (node:internal/modules/cjs/loader:1233:19)
+    at require (node:internal/modules/helpers:179:18)
+    at interopRequireDefault (C:\Users\felip\AppData\Local\npm-cache\_npx\bc7e1e37fcb46ffc\node_modules\@storybook\core-common\dist\index.js:6:21)
+    at getStorybookData (C:\Users\felip\AppData\Local\npm-cache\_npx\bc7e1e37fcb46ffc\node_modules\@storybook\cli\dist\generate.js:185:4560)
+    at async runFixes (C:\Users\felip\AppData\Local\npm-cache\_npx\bc7e1e37fcb46ffc\node_modules\@storybook\cli\dist\generate.js:634:2652)
+    at async automigrate (C:\Users\felip\AppData\Local\npm-cache\_npx\bc7e1e37fcb46ffc\node_modules\@storybook\cli\dist\generate.js:634:1629)
+    at async doUpgrade (C:\Users\felip\AppData\Local\npm-cache\_npx\bc7e1e37fcb46ffc\node_modules\@storybook\cli\dist\generate.js:650:1628)
+    at async withTelemetry (C:\Users\felip\AppData\Local\npm-cache\_npx\bc7e1e37fcb46ffc\node_modules\@storybook\core-server\dist\index.js:28:3599)
+    at async upgrade (C:\Users\felip\AppData\Local\npm-cache\_npx\bc7e1e37fcb46ffc\node_modules\@storybook\cli\dist\generate.js:650:2097)
+
+⚠️  failed to check fix visual-tests-addon
+
+Error: Unable to find or evaluate node_modules\@redwoodjs\testing\config\storybook\main.js: SB_CORE-SERVER_0007 (MainFileEvaluationError): Storybook couldn't evaluate your node_modules\@redwoodjs\testing\config\storybook\main.js file.
+
+\node_modules\@redwoodjs\testing\config\storybook\main.js:204
+export const stories = ['C:/Users/felip/Documentos/projects/redwood-blog/web/src/**/*.@(mdx|stories.@(js|jsx|ts|tsx))'];
+^^^^^^
+
+SyntaxError: Unexpected token 'export'
+    at wrapSafe (node:internal/modules/cjs/loader:1281:20)
+    at Module._compile (node:internal/modules/cjs/loader:1321:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)
+    at Object.newLoader (C:\Users\felip\AppData\Local\npm-cache\_npx\bc7e1e37fcb46ffc\node_modules\esbuild-register\dist\node.js:2262:9)
+    at extensions..js (C:\Users\felip\AppData\Local\npm-cache\_npx\bc7e1e37fcb46ffc\node_modules\esbuild-register\dist\node.js:4838:24)
+    at Module.load (node:internal/modules/cjs/loader:1208:32)
+    at Module._load (node:internal/modules/cjs/loader:1024:12)
+    at Module.require (node:internal/modules/cjs/loader:1233:19)
+    at require (node:internal/modules/helpers:179:18)
+    at interopRequireDefault (C:\Users\felip\AppData\Local\npm-cache\_npx\bc7e1e37fcb46ffc\node_modules\@storybook\core-common\dist\index.js:6:21)
+    at getStorybookData (C:\Users\felip\AppData\Local\npm-cache\_npx\bc7e1e37fcb46ffc\node_modules\@storybook\cli\dist\generate.js:185:4560)
+    at async runFixes (C:\Users\felip\AppData\Local\npm-cache\_npx\bc7e1e37fcb46ffc\node_modules\@storybook\cli\dist\generate.js:634:2652)
+    at async automigrate (C:\Users\felip\AppData\Local\npm-cache\_npx\bc7e1e37fcb46ffc\node_modules\@storybook\cli\dist\generate.js:634:1629)
+    at async doUpgrade (C:\Users\felip\AppData\Local\npm-cache\_npx\bc7e1e37fcb46ffc\node_modules\@storybook\cli\dist\generate.js:650:1628)
+    at async withTelemetry (C:\Users\felip\AppData\Local\npm-cache\_npx\bc7e1e37fcb46ffc\node_modules\@storybook\core-server\dist\index.js:28:3599)
+    at async upgrade (C:\Users\felip\AppData\Local\npm-cache\_npx\bc7e1e37fcb46ffc\node_modules\@storybook\cli\dist\generate.js:650:2097)
+
+⚠️  failed to check fix autodocs-tags
+
+Error: Unable to find or evaluate node_modules\@redwoodjs\testing\config\storybook\main.js: SB_CORE-SERVER_0007 (MainFileEvaluationError): Storybook couldn't evaluate your node_modules\@redwoodjs\testing\config\storybook\main.js file.
+
+\node_modules\@redwoodjs\testing\config\storybook\main.js:204
+export const stories = ['C:/Users/felip/Documentos/projects/redwood-blog/web/src/**/*.@(mdx|stories.@(js|jsx|ts|tsx))'];
+^^^^^^
+
+SyntaxError: Unexpected token 'export'
+    at wrapSafe (node:internal/modules/cjs/loader:1281:20)
+    at Module._compile (node:internal/modules/cjs/loader:1321:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)
+    at Object.newLoader (C:\Users\felip\AppData\Local\npm-cache\_npx\bc7e1e37fcb46ffc\node_modules\esbuild-register\dist\node.js:2262:9)
+    at extensions..js (C:\Users\felip\AppData\Local\npm-cache\_npx\bc7e1e37fcb46ffc\node_modules\esbuild-register\dist\node.js:4838:24)
+    at Module.load (node:internal/modules/cjs/loader:1208:32)
+    at Module._load (node:internal/modules/cjs/loader:1024:12)
+    at Module.require (node:internal/modules/cjs/loader:1233:19)
+    at require (node:internal/modules/helpers:179:18)
+    at interopRequireDefault (C:\Users\felip\AppData\Local\npm-cache\_npx\bc7e1e37fcb46ffc\node_modules\@storybook\core-common\dist\index.js:6:21)
+    at getStorybookData (C:\Users\felip\AppData\Local\npm-cache\_npx\bc7e1e37fcb46ffc\node_modules\@storybook\cli\dist\generate.js:185:4560)
+    at async runFixes (C:\Users\felip\AppData\Local\npm-cache\_npx\bc7e1e37fcb46ffc\node_modules\@storybook\cli\dist\generate.js:634:2652)
+    at async automigrate (C:\Users\felip\AppData\Local\npm-cache\_npx\bc7e1e37fcb46ffc\node_modules\@storybook\cli\dist\generate.js:634:1629)
+    at async doUpgrade (C:\Users\felip\AppData\Local\npm-cache\_npx\bc7e1e37fcb46ffc\node_modules\@storybook\cli\dist\generate.js:650:1628)
+    at async withTelemetry (C:\Users\felip\AppData\Local\npm-cache\_npx\bc7e1e37fcb46ffc\node_modules\@storybook\core-server\dist\index.js:28:3599)
+    at async upgrade (C:\Users\felip\AppData\Local\npm-cache\_npx\bc7e1e37fcb46ffc\node_modules\@storybook\cli\dist\generate.js:650:2097)
+
+╭ Migration check ran with failures ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╮
+│                                                                                                                                                                           │
+│   Successful migrations:                                                                                                                                                  │
+│                                                                                                                                                                           │
+│   mdx-to-csf                                                                                                                                                              │
+│                                                                                                                                                                           │
+│   Failed migrations:                                                                                                                                                      │
+│                                                                                                                                                                           │
+│   autodocsTrue:                                                                                                                                                           │
+│   Unable to find or evaluate node_modules\@redwoodjs\testing\config\storybook\main.js: SB_CORE-SERVER_0007 (MainFileEvaluationError): Storybook couldn't evaluate your    │
+│   node_modules\@redwoodjs\testing\config\storybook\main.js file.                                                                                                          │
+│                                                                                                                                                                           │
+│   \node_modules\@redwoodjs\testing\config\storybook\main.js:204                                                                                                           │
+│   export const stories = ['C:/Users/felip/Documentos/projects/redwood-blog/web/src/**/*.@(mdx|stories.@(js|jsx|ts|tsx))'];                                                │
+│   ^^^^^^                                                                                                                                                                  │
+│                                                                                                                                                                           │
+│   SyntaxError: Unexpected token 'export'                                                                                                                                  │
+│   at wrapSafe (node:internal/modules/cjs/loader:1281:20)                                                                                                                  │
+│   at Module._compile (node:internal/modules/cjs/loader:1321:27)                                                                                                           │
+│   at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)                                                                                                    │
+│   at Object.newLoader (C:\Users\felip\AppData\Local\npm-cache\_npx\bc7e1e37fcb46ffc\node_modules\esbuild-register\dist\node.js:2262:9)                                    │
+│   at extensions..js (C:\Users\felip\AppData\Local\npm-cache\_npx\bc7e1e37fcb46ffc\node_modules\esbuild-register\dist\node.js:4838:24)                                     │
+│   at Module.load (node:internal/modules/cjs/loader:1208:32)                                                                                                               │
+│   at Module._load (node:internal/modules/cjs/loader:1024:12)                                                                                                              │
+│   at Module.require (node:internal/modules/cjs/loader:1233:19)                                                                                                            │
+│   at require (node:internal/modules/helpers:179:18)                                                                                                                       │
+│   at interopRequireDefault (C:\Users\felip\AppData\Local\npm-cache\_npx\bc7e1e37fcb46ffc\node_modules\@storybook\core-common\dist\index.js:6:21)                          │
+│   angular-builders-multiproject:                                                                                                                                          │
+│   Unable to find or evaluate node_modules\@redwoodjs\testing\config\storybook\main.js: SB_CORE-SERVER_0007 (MainFileEvaluationError): Storybook couldn't evaluate your    │
+│   node_modules\@redwoodjs\testing\config\storybook\main.js file.                                                                                                          │
+│                                                                                                                                                                           │
+│   \node_modules\@redwoodjs\testing\config\storybook\main.js:204                                                                                                           │
+│   export const stories = ['C:/Users/felip/Documentos/projects/redwood-blog/web/src/**/*.@(mdx|stories.@(js|jsx|ts|tsx))'];                                                │
+│   ^^^^^^                                                                                                                                                                  │
+│                                                                                                                                                                           │
+│   SyntaxError: Unexpected token 'export'                                                                                                                                  │
+│   at wrapSafe (node:internal/modules/cjs/loader:1281:20)                                                                                                                  │
+│   at Module._compile (node:internal/modules/cjs/loader:1321:27)                                                                                                           │
+│   at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)                                                                                                    │
+│   at Object.newLoader (C:\Users\felip\AppData\Local\npm-cache\_npx\bc7e1e37fcb46ffc\node_modules\esbuild-register\dist\node.js:2262:9)                                    │
+│   at extensions..js (C:\Users\felip\AppData\Local\npm-cache\_npx\bc7e1e37fcb46ffc\node_modules\esbuild-register\dist\node.js:4838:24)                                     │
+│   at Module.load (node:internal/modules/cjs/loader:1208:32)                                                                                                               │
+│   at Module._load (node:internal/modules/cjs/loader:1024:12)                                                                                                              │
+│   at Module.require (node:internal/modules/cjs/loader:1233:19)                                                                                                            │
+│   at require (node:internal/modules/helpers:179:18)                                                                                                                       │
+│   at interopRequireDefault (C:\Users\felip\AppData\Local\npm-cache\_npx\bc7e1e37fcb46ffc\node_modules\@storybook\core-common\dist\index.js:6:21)                          │
+│   angular-builders:                                                                                                                                                       │
+│   Unable to find or evaluate node_modules\@redwoodjs\testing\config\storybook\main.js: SB_CORE-SERVER_0007 (MainFileEvaluationError): Storybook couldn't evaluate your    │
+│   node_modules\@redwoodjs\testing\config\storybook\main.js file.                                                                                                          │
+│                                                                                                                                                                           │
+│   \node_modules\@redwoodjs\testing\config\storybook\main.js:204                                                                                                           │
+│   export const stories = ['C:/Users/felip/Documentos/projects/redwood-blog/web/src/**/*.@(mdx|stories.@(js|jsx|ts|tsx))'];                                                │
+│   ^^^^^^                                                                                                                                                                  │
+│                                                                                                                                                                           │
+│   SyntaxError: Unexpected token 'export'                                                                                                                                  │
+│   at wrapSafe (node:internal/modules/cjs/loader:1281:20)                                                                                                                  │
+│   at Module._compile (node:internal/modules/cjs/loader:1321:27)                                                                                                           │
+│   at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)                                                                                                    │
+│   at Object.newLoader (C:\Users\felip\AppData\Local\npm-cache\_npx\bc7e1e37fcb46ffc\node_modules\esbuild-register\dist\node.js:2262:9)                                    │
+│   at extensions..js (C:\Users\felip\AppData\Local\npm-cache\_npx\bc7e1e37fcb46ffc\node_modules\esbuild-register\dist\node.js:4838:24)                                     │
+│   at Module.load (node:internal/modules/cjs/loader:1208:32)                                                                                                               │
+│   at Module._load (node:internal/modules/cjs/loader:1024:12)                                                                                                              │
+│   at Module.require (node:internal/modules/cjs/loader:1233:19)                                                                                                            │
+│   at require (node:internal/modules/helpers:179:18)                                                                                                                       │
+│   at interopRequireDefault (C:\Users\felip\AppData\Local\npm-cache\_npx\bc7e1e37fcb46ffc\node_modules\@storybook\core-common\dist\index.js:6:21)                          │
+│   wrap-require:                                                                                                                                                           │
+│   Unable to find or evaluate node_modules\@redwoodjs\testing\config\storybook\main.js: SB_CORE-SERVER_0007 (MainFileEvaluationError): Storybook couldn't evaluate your    │
+│   node_modules\@redwoodjs\testing\config\storybook\main.js file.                                                                                                          │
+│                                                                                                                                                                           │
+│   \node_modules\@redwoodjs\testing\config\storybook\main.js:204                                                                                                           │
+│   export const stories = ['C:/Users/felip/Documentos/projects/redwood-blog/web/src/**/*.@(mdx|stories.@(js|jsx|ts|tsx))'];                                                │
+│   ^^^^^^                                                                                                                                                                  │
+│                                                                                                                                                                           │
+│   SyntaxError: Unexpected token 'export'                                                                                                                                  │
+│   at wrapSafe (node:internal/modules/cjs/loader:1281:20)                                                                                                                  │
+│   at Module._compile (node:internal/modules/cjs/loader:1321:27)                                                                                                           │
+│   at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)                                                                                                    │
+│   at Object.newLoader (C:\Users\felip\AppData\Local\npm-cache\_npx\bc7e1e37fcb46ffc\node_modules\esbuild-register\dist\node.js:2262:9)                                    │
+│   at extensions..js (C:\Users\felip\AppData\Local\npm-cache\_npx\bc7e1e37fcb46ffc\node_modules\esbuild-register\dist\node.js:4838:24)                                     │
+│   at Module.load (node:internal/modules/cjs/loader:1208:32)                                                                                                               │
+│   at Module._load (node:internal/modules/cjs/loader:1024:12)                                                                                                              │
+│   at Module.require (node:internal/modules/cjs/loader:1233:19)                                                                                                            │
+│   at require (node:internal/modules/helpers:179:18)                                                                                                                       │
+│   at interopRequireDefault (C:\Users\felip\AppData\Local\npm-cache\_npx\bc7e1e37fcb46ffc\node_modules\@storybook\core-common\dist\index.js:6:21)                          │
+│   react-docgen:                                                                                                                                                           │
+│   Unable to find or evaluate node_modules\@redwoodjs\testing\config\storybook\main.js: SB_CORE-SERVER_0007 (MainFileEvaluationError): Storybook couldn't evaluate your    │
+│   node_modules\@redwoodjs\testing\config\storybook\main.js file.                                                                                                          │
+│                                                                                                                                                                           │
+│   \node_modules\@redwoodjs\testing\config\storybook\main.js:204                                                                                                           │
+│   export const stories = ['C:/Users/felip/Documentos/projects/redwood-blog/web/src/**/*.@(mdx|stories.@(js|jsx|ts|tsx))'];                                                │
+│   ^^^^^^                                                                                                                                                                  │
+│                                                                                                                                                                           │
+│   SyntaxError: Unexpected token 'export'                                                                                                                                  │
+│   at wrapSafe (node:internal/modules/cjs/loader:1281:20)                                                                                                                  │
+│   at Module._compile (node:internal/modules/cjs/loader:1321:27)                                                                                                           │
+│   at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)                                                                                                    │
+│   at Object.newLoader (C:\Users\felip\AppData\Local\npm-cache\_npx\bc7e1e37fcb46ffc\node_modules\esbuild-register\dist\node.js:2262:9)                                    │
+│   at extensions..js (C:\Users\felip\AppData\Local\npm-cache\_npx\bc7e1e37fcb46ffc\node_modules\esbuild-register\dist\node.js:4838:24)                                     │
+│   at Module.load (node:internal/modules/cjs/loader:1208:32)                                                                                                               │
+│   at Module._load (node:internal/modules/cjs/loader:1024:12)                                                                                                              │
+│   at Module.require (node:internal/modules/cjs/loader:1233:19)                                                                                                            │
+│   at require (node:internal/modules/helpers:179:18)                                                                                                                       │
+│   at interopRequireDefault (C:\Users\felip\AppData\Local\npm-cache\_npx\bc7e1e37fcb46ffc\node_modules\@storybook\core-common\dist\index.js:6:21)                          │
+│   storyshots:                                                                                                                                                             │
+│   Unable to find or evaluate node_modules\@redwoodjs\testing\config\storybook\main.js: SB_CORE-SERVER_0007 (MainFileEvaluationError): Storybook couldn't evaluate your    │
+│   node_modules\@redwoodjs\testing\config\storybook\main.js file.                                                                                                          │
+│                                                                                                                                                                           │
+│   \node_modules\@redwoodjs\testing\config\storybook\main.js:204                                                                                                           │
+│   export const stories = ['C:/Users/felip/Documentos/projects/redwood-blog/web/src/**/*.@(mdx|stories.@(js|jsx|ts|tsx))'];                                                │
+│   ^^^^^^                                                                                                                                                                  │
+│                                                                                                                                                                           │
+│   SyntaxError: Unexpected token 'export'                                                                                                                                  │
+│   at wrapSafe (node:internal/modules/cjs/loader:1281:20)                                                                                                                  │
+│   at Module._compile (node:internal/modules/cjs/loader:1321:27)                                                                                                           │
+│   at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)                                                                                                    │
+│   at Object.newLoader (C:\Users\felip\AppData\Local\npm-cache\_npx\bc7e1e37fcb46ffc\node_modules\esbuild-register\dist\node.js:2262:9)                                    │
+│   at extensions..js (C:\Users\felip\AppData\Local\npm-cache\_npx\bc7e1e37fcb46ffc\node_modules\esbuild-register\dist\node.js:4838:24)                                     │
+│   at Module.load (node:internal/modules/cjs/loader:1208:32)                                                                                                               │
+│   at Module._load (node:internal/modules/cjs/loader:1024:12)                                                                                                              │
+│   at Module.require (node:internal/modules/cjs/loader:1233:19)                                                                                                            │
+│   at require (node:internal/modules/helpers:179:18)                                                                                                                       │
+│   at interopRequireDefault (C:\Users\felip\AppData\Local\npm-cache\_npx\bc7e1e37fcb46ffc\node_modules\@storybook\core-common\dist\index.js:6:21)                          │
+│   remove-react-dependency:                                                                                                                                                │
+│   Unable to find or evaluate node_modules\@redwoodjs\testing\config\storybook\main.js: SB_CORE-SERVER_0007 (MainFileEvaluationError): Storybook couldn't evaluate your    │
+│   node_modules\@redwoodjs\testing\config\storybook\main.js file.                                                                                                          │
+│                                                                                                                                                                           │
+│   \node_modules\@redwoodjs\testing\config\storybook\main.js:204                                                                                                           │
+│   export const stories = ['C:/Users/felip/Documentos/projects/redwood-blog/web/src/**/*.@(mdx|stories.@(js|jsx|ts|tsx))'];                                                │
+│   ^^^^^^                                                                                                                                                                  │
+│                                                                                                                                                                           │
+│   SyntaxError: Unexpected token 'export'                                                                                                                                  │
+│   at wrapSafe (node:internal/modules/cjs/loader:1281:20)                                                                                                                  │
+│   at Module._compile (node:internal/modules/cjs/loader:1321:27)                                                                                                           │
+│   at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)                                                                                                    │
+│   at Object.newLoader (C:\Users\felip\AppData\Local\npm-cache\_npx\bc7e1e37fcb46ffc\node_modules\esbuild-register\dist\node.js:2262:9)                                    │
+│   at extensions..js (C:\Users\felip\AppData\Local\npm-cache\_npx\bc7e1e37fcb46ffc\node_modules\esbuild-register\dist\node.js:4838:24)                                     │
+│   at Module.load (node:internal/modules/cjs/loader:1208:32)                                                                                                               │
+│   at Module._load (node:internal/modules/cjs/loader:1024:12)                                                                                                              │
+│   at Module.require (node:internal/modules/cjs/loader:1233:19)                                                                                                            │
+│   at require (node:internal/modules/helpers:179:18)                                                                                                                       │
+│   at interopRequireDefault (C:\Users\felip\AppData\Local\npm-cache\_npx\bc7e1e37fcb46ffc\node_modules\@storybook\core-common\dist\index.js:6:21)                          │
+│   remove-legacy-mdx1:                                                                                                                                                     │
+│   Unable to find or evaluate node_modules\@redwoodjs\testing\config\storybook\main.js: SB_CORE-SERVER_0007 (MainFileEvaluationError): Storybook couldn't evaluate your    │
+│   node_modules\@redwoodjs\testing\config\storybook\main.js file.                                                                                                          │
+│                                                                                                                                                                           │
+│   \node_modules\@redwoodjs\testing\config\storybook\main.js:204                                                                                                           │
+│   export const stories = ['C:/Users/felip/Documentos/projects/redwood-blog/web/src/**/*.@(mdx|stories.@(js|jsx|ts|tsx))'];                                                │
+│   ^^^^^^                                                                                                                                                                  │
+│                                                                                                                                                                           │
+│   SyntaxError: Unexpected token 'export'                                                                                                                                  │
+│   at wrapSafe (node:internal/modules/cjs/loader:1281:20)                                                                                                                  │
+│   at Module._compile (node:internal/modules/cjs/loader:1321:27)                                                                                                           │
+│   at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)                                                                                                    │
+│   at Object.newLoader (C:\Users\felip\AppData\Local\npm-cache\_npx\bc7e1e37fcb46ffc\node_modules\esbuild-register\dist\node.js:2262:9)                                    │
+│   at extensions..js (C:\Users\felip\AppData\Local\npm-cache\_npx\bc7e1e37fcb46ffc\node_modules\esbuild-register\dist\node.js:4838:24)                                     │
+│   at Module.load (node:internal/modules/cjs/loader:1208:32)                                                                                                               │
+│   at Module._load (node:internal/modules/cjs/loader:1024:12)                                                                                                              │
+│   at Module.require (node:internal/modules/cjs/loader:1233:19)                                                                                                            │
+│   at require (node:internal/modules/helpers:179:18)                                                                                                                       │
+│   at interopRequireDefault (C:\Users\felip\AppData\Local\npm-cache\_npx\bc7e1e37fcb46ffc\node_modules\@storybook\core-common\dist\index.js:6:21)                          │
+│   webpack5-compiler-setup:                                                                                                                                                │
+│   Unable to find or evaluate node_modules\@redwoodjs\testing\config\storybook\main.js: SB_CORE-SERVER_0007 (MainFileEvaluationError): Storybook couldn't evaluate your    │
+│   node_modules\@redwoodjs\testing\config\storybook\main.js file.                                                                                                          │
+│                                                                                                                                                                           │
+│   \node_modules\@redwoodjs\testing\config\storybook\main.js:204                                                                                                           │
+│   export const stories = ['C:/Users/felip/Documentos/projects/redwood-blog/web/src/**/*.@(mdx|stories.@(js|jsx|ts|tsx))'];                                                │
+│   ^^^^^^                                                                                                                                                                  │
+│                                                                                                                                                                           │
+│   SyntaxError: Unexpected token 'export'                                                                                                                                  │
+│   at wrapSafe (node:internal/modules/cjs/loader:1281:20)                                                                                                                  │
+│   at Module._compile (node:internal/modules/cjs/loader:1321:27)                                                                                                           │
+│   at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)                                                                                                    │
+│   at Object.newLoader (C:\Users\felip\AppData\Local\npm-cache\_npx\bc7e1e37fcb46ffc\node_modules\esbuild-register\dist\node.js:2262:9)                                    │
+│   at extensions..js (C:\Users\felip\AppData\Local\npm-cache\_npx\bc7e1e37fcb46ffc\node_modules\esbuild-register\dist\node.js:4838:24)                                     │
+│   at Module.load (node:internal/modules/cjs/loader:1208:32)                                                                                                               │
+│   at Module._load (node:internal/modules/cjs/loader:1024:12)                                                                                                              │
+│   at Module.require (node:internal/modules/cjs/loader:1233:19)                                                                                                            │
+│   at require (node:internal/modules/helpers:179:18)                                                                                                                       │
+│   at interopRequireDefault (C:\Users\felip\AppData\Local\npm-cache\_npx\bc7e1e37fcb46ffc\node_modules\@storybook\core-common\dist\index.js:6:21)                          │
+│   mdx1to3:                                                                                                                                                                │
+│   Unable to find or evaluate node_modules\@redwoodjs\testing\config\storybook\main.js: SB_CORE-SERVER_0007 (MainFileEvaluationError): Storybook couldn't evaluate your    │
+│   node_modules\@redwoodjs\testing\config\storybook\main.js file.                                                                                                          │
+│                                                                                                                                                                           │
+│   \node_modules\@redwoodjs\testing\config\storybook\main.js:204                                                                                                           │
+│   export const stories = ['C:/Users/felip/Documentos/projects/redwood-blog/web/src/**/*.@(mdx|stories.@(js|jsx|ts|tsx))'];                                                │
+│   ^^^^^^                                                                                                                                                                  │
+│                                                                                                                                                                           │
+│   SyntaxError: Unexpected token 'export'                                                                                                                                  │
+│   at wrapSafe (node:internal/modules/cjs/loader:1281:20)                                                                                                                  │
+│   at Module._compile (node:internal/modules/cjs/loader:1321:27)                                                                                                           │
+│   at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)                                                                                                    │
+│   at Object.newLoader (C:\Users\felip\AppData\Local\npm-cache\_npx\bc7e1e37fcb46ffc\node_modules\esbuild-register\dist\node.js:2262:9)                                    │
+│   at extensions..js (C:\Users\felip\AppData\Local\npm-cache\_npx\bc7e1e37fcb46ffc\node_modules\esbuild-register\dist\node.js:4838:24)                                     │
+│   at Module.load (node:internal/modules/cjs/loader:1208:32)                                                                                                               │
+│   at Module._load (node:internal/modules/cjs/loader:1024:12)                                                                                                              │
+│   at Module.require (node:internal/modules/cjs/loader:1233:19)                                                                                                            │
+│   at require (node:internal/modules/helpers:179:18)                                                                                                                       │
+│   at interopRequireDefault (C:\Users\felip\AppData\Local\npm-cache\_npx\bc7e1e37fcb46ffc\node_modules\@storybook\core-common\dist\index.js:6:21)                          │
+│   upgradeStorybookRelatedDependencies:                                                                                                                                    │
+│   Unable to find or evaluate node_modules\@redwoodjs\testing\config\storybook\main.js: SB_CORE-SERVER_0007 (MainFileEvaluationError): Storybook couldn't evaluate your    │
+│   node_modules\@redwoodjs\testing\config\storybook\main.js file.                                                                                                          │
+│                                                                                                                                                                           │
+│   \node_modules\@redwoodjs\testing\config\storybook\main.js:204                                                                                                           │
+│   export const stories = ['C:/Users/felip/Documentos/projects/redwood-blog/web/src/**/*.@(mdx|stories.@(js|jsx|ts|tsx))'];                                                │
+│   ^^^^^^                                                                                                                                                                  │
+│                                                                                                                                                                           │
+│   SyntaxError: Unexpected token 'export'                                                                                                                                  │
+│   at wrapSafe (node:internal/modules/cjs/loader:1281:20)                                                                                                                  │
+│   at Module._compile (node:internal/modules/cjs/loader:1321:27)                                                                                                           │
+│   at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)                                                                                                    │
+│   at Object.newLoader (C:\Users\felip\AppData\Local\npm-cache\_npx\bc7e1e37fcb46ffc\node_modules\esbuild-register\dist\node.js:2262:9)                                    │
+│   at extensions..js (C:\Users\felip\AppData\Local\npm-cache\_npx\bc7e1e37fcb46ffc\node_modules\esbuild-register\dist\node.js:4838:24)                                     │
+│   at Module.load (node:internal/modules/cjs/loader:1208:32)                                                                                                               │
+│   at Module._load (node:internal/modules/cjs/loader:1024:12)                                                                                                              │
+│   at Module.require (node:internal/modules/cjs/loader:1233:19)                                                                                                            │
+│   at require (node:internal/modules/helpers:179:18)                                                                                                                       │
+│   at interopRequireDefault (C:\Users\felip\AppData\Local\npm-cache\_npx\bc7e1e37fcb46ffc\node_modules\@storybook\core-common\dist\index.js:6:21)                          │
+│   visual-tests-addon:                                                                                                                                                     │
+│   Unable to find or evaluate node_modules\@redwoodjs\testing\config\storybook\main.js: SB_CORE-SERVER_0007 (MainFileEvaluationError): Storybook couldn't evaluate your    │
+│   node_modules\@redwoodjs\testing\config\storybook\main.js file.                                                                                                          │
+│                                                                                                                                                                           │
+│   \node_modules\@redwoodjs\testing\config\storybook\main.js:204                                                                                                           │
+│   export const stories = ['C:/Users/felip/Documentos/projects/redwood-blog/web/src/**/*.@(mdx|stories.@(js|jsx|ts|tsx))'];                                                │
+│   ^^^^^^                                                                                                                                                                  │
+│                                                                                                                                                                           │
+│   SyntaxError: Unexpected token 'export'                                                                                                                                  │
+│   at wrapSafe (node:internal/modules/cjs/loader:1281:20)                                                                                                                  │
+│   at Module._compile (node:internal/modules/cjs/loader:1321:27)                                                                                                           │
+│   at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)                                                                                                    │
+│   at Object.newLoader (C:\Users\felip\AppData\Local\npm-cache\_npx\bc7e1e37fcb46ffc\node_modules\esbuild-register\dist\node.js:2262:9)                                    │
+│   at extensions..js (C:\Users\felip\AppData\Local\npm-cache\_npx\bc7e1e37fcb46ffc\node_modules\esbuild-register\dist\node.js:4838:24)                                     │
+│   at Module.load (node:internal/modules/cjs/loader:1208:32)                                                                                                               │
+│   at Module._load (node:internal/modules/cjs/loader:1024:12)                                                                                                              │
+│   at Module.require (node:internal/modules/cjs/loader:1233:19)                                                                                                            │
+│   at require (node:internal/modules/helpers:179:18)                                                                                                                       │
+│   at interopRequireDefault (C:\Users\felip\AppData\Local\npm-cache\_npx\bc7e1e37fcb46ffc\node_modules\@storybook\core-common\dist\index.js:6:21)                          │
+│   autodocs-tags:                                                                                                                                                          │
+│   Unable to find or evaluate node_modules\@redwoodjs\testing\config\storybook\main.js: SB_CORE-SERVER_0007 (MainFileEvaluationError): Storybook couldn't evaluate your    │
+│   node_modules\@redwoodjs\testing\config\storybook\main.js file.                                                                                                          │
+│                                                                                                                                                                           │
+│   \node_modules\@redwoodjs\testing\config\storybook\main.js:204                                                                                                           │
+│   export const stories = ['C:/Users/felip/Documentos/projects/redwood-blog/web/src/**/*.@(mdx|stories.@(js|jsx|ts|tsx))'];                                                │
+│   ^^^^^^                                                                                                                                                                  │
+│                                                                                                                                                                           │
+│   SyntaxError: Unexpected token 'export'                                                                                                                                  │
+│   at wrapSafe (node:internal/modules/cjs/loader:1281:20)                                                                                                                  │
+│   at Module._compile (node:internal/modules/cjs/loader:1321:27)                                                                                                           │
+│   at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)                                                                                                    │
+│   at Object.newLoader (C:\Users\felip\AppData\Local\npm-cache\_npx\bc7e1e37fcb46ffc\node_modules\esbuild-register\dist\node.js:2262:9)                                    │
+│   at extensions..js (C:\Users\felip\AppData\Local\npm-cache\_npx\bc7e1e37fcb46ffc\node_modules\esbuild-register\dist\node.js:4838:24)                                     │
+│   at Module.load (node:internal/modules/cjs/loader:1208:32)                                                                                                               │
+│   at Module._load (node:internal/modules/cjs/loader:1024:12)                                                                                                              │
+│   at Module.require (node:internal/modules/cjs/loader:1233:19)                                                                                                            │
+│   at require (node:internal/modules/helpers:179:18)                                                                                                                       │
+│   at interopRequireDefault (C:\Users\felip\AppData\Local\npm-cache\_npx\bc7e1e37fcb46ffc\node_modules\@storybook\core-common\dist\index.js:6:21)                          │
+│                                                                                                                                                                           │
+│   You can find the full logs in C:\Users\felip\Documentos\projects\redwood-blog\migration-storybook.log                                                                   │
+│                                                                                                                                                                           │
+│   ─────────────────────────────────────────────────                                                                                                                       │
+│                                                                                                                                                                           │
+│   If you'd like to run the migrations again, you can do so by running 'npx storybook automigrate'                                                                         │
+│                                                                                                                                                                           │
+│   The automigrations try to migrate common patterns in your project, but might not contain everything needed to migrate to the latest version of Storybook.               │
+│                                                                                                                                                                           │
+│   Please check the changelog and migration guide for manual migrations and more information: https://storybook.js.org/docs/8.0/migration-guide                            │
+│   And reach out on Discord if you need help: https://discord.gg/storybook                                                                                                 │
+│                                                                                                                                                                           │
+╰───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+

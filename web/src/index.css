@@ -11,6 +11,15 @@
 /**
  * END --- SETUP TAILWINDCSS EDIT
  */
+
+body {
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  overflow-x: hidden;
+}
+
 .error{
   color: red;
 }

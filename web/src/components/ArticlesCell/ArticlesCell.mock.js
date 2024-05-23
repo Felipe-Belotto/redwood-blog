@@ -1,4 +1,8 @@
 // Define your own mock data here:
 export const standard = (/* vars, { ctx, req } */) => ({
-  articles: [{ id: 42 }, { id: 43 }, { id: 44 }],
+  articles: [
+    { id: 1, title: 'First Post', body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce euismod erat sed est placerat fringilla. Suspendisse nisi urna, vulputate sed pharetra non, sollicitudin in lorem. Donec vitae ex dolor. Vivamus ac porta metus, a ullamcorper ex. Nullam ac iaculis dolor. Etiam ac nulla mattis, aliquam mi id, maximus lectus. In a dolor ligula. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nunc aliquam urna porttitor elit dictum, non commodo sem pulvinar. Sed nec mi sed quam lobortis ultricies eget blandit lacus. Fusce eu neque sollicitudin, scelerisque diam id, placerat ante. Nunc imperdiet scelerisque erat vitae efficitur. Pellentesque sed eros non nulla sodales tempus nec in est.', createdAt: new Date() },
+    { id: 2, title: 'Second Post', body: 'Mauris sodales vulputate turpis eget convallis. Vestibulum ullamcorper neque nec nisl pulvinar tincidunt. Phasellus rutrum sed ipsum ut rhoncus. Morbi nec nunc lorem. Nulla vitae est eu nisi tempor luctus non a nisl. Nam vitae volutpat nisi, ac elementum libero. In eget nisl semper, porttitor nisi condimentum, efficitur ipsum. Aliquam erat volutpat. Ut eget urna posuere, interdum felis sit amet, tempus metus. Mauris eu enim convallis tellus laoreet eleifend ut eu felis. Curabitur a sagittis odio. In hac habitasse platea dictumst. Vestibulum ut suscipit enim. Ut iaculis mauris nec arcu tempus ultricies. Curabitur a nisi eget ipsum efficitur finibus id eget lacus. Sed vel leo eleifend, ullamcorper diam a, blandit orci.', createdAt: new Date() },
+  ],
 })
+
