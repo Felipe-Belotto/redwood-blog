@@ -48,7 +48,7 @@ const LoginPage = () => {
     <>
       <Metadata title="Login" />
 
-      <main className="rw-main">
+      <main className="w-full">
         <Toaster toastOptions={{ className: 'rw-toast', duration: 6000 }} />
         <div className="rw-scaffold rw-login-container">
           <div className="rw-segment">

@@ -27,12 +27,12 @@ export const Success = ({ article }) => {
   }
 
   return (
-    <section className="w-[500px] mt-16">
+    <section className="lg:w-[500px] lg:mt-16">
       <h1 style={{ fontSize: '24px' }}>{article.title}</h1>
       <p style={{ fontSize: '16px' }}>{article.body}</p>
-      <div className="mt-12">
+      <div className="mt-6 lg:mt-12">
           <CommentForm postId={article.id} />
-          <div className="mt-12">
+          <div className="mt-6 lg:mt-12">
             <CommentsCell postId={article.id} />
           </div>
         </div>

@@ -9,8 +9,8 @@ const BlogLayout = ({ children }) => {
   return (
     <>
       <Toaster />
-      <header className="relative flex justify-between items-center py-4 px-8 bg-blue-700 text-white">
-        <h1 className="text-2xl font-semibold tracking-tight">
+      <header className="relative flex justify-between items-center py-4 px-4 lg:px-8 bg-blue-700 text-white">
+        <h1 className="lg:text-2xl font-semibold tracking-tight">
           <Link
             className=" hover:text-blue-100 transition duration-100"
             to={routes.home()}
@@ -53,7 +53,7 @@ const BlogLayout = ({ children }) => {
 
         </nav>
       </header>
-      <main className="max-w-4xl mx-auto p-12 bg-white shadow rounded-b">
+      <main className="lg:max-w-4xl mx-auto p-6 lg:p-12 bg-white shadow rounded-b">
         {children}
       </main>
     </>

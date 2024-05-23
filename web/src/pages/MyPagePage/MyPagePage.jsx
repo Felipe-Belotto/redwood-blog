@@ -8,7 +8,7 @@ const MyPagePage = () => {
     <>
       <Metadata title="MyPage" description="MyPage page" />
 
-      <section className='w-full flex justify-center p-8'>
+      <section className='w-full flex justify-center lg:p-8'>
       <ArticlesCell />
 
       </section>

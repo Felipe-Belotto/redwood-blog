@@ -5,7 +5,7 @@ import { truncate } from "src/lib/formatters";
 
 const Article = ({ article, summary = false }) => {
   return (
-    <article>
+    <article className="shadow-md rounded p-2 lg:p-4">
       <header>
         <h2 className="text-xl text-blue-700 font-semibold">
           <Link to={routes.article({ id: article.id })}>{article.title}</Link>
