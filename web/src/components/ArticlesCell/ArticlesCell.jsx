@@ -21,7 +21,7 @@ export const Success = ({ articles }) => {
   return (
     <div className="space-y-10">
       {articles.map((article) => (
-        <Article article={article} key={article.id} summary={true} />
+        <Article article={article} key={article.id} summary={false} />
       ))}
     </div>
   )

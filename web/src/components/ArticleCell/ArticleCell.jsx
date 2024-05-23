@@ -1,3 +1,4 @@
+import CommentForm from "../CommentForm/CommentForm";
 import CommentsCell from "../CommentsCell";
 
 export const QUERY = gql`
@@ -29,10 +30,12 @@ export const Success = ({ article }) => {
     <section className="w-[500px] mt-16">
       <h1 style={{ fontSize: '24px' }}>{article.title}</h1>
       <p style={{ fontSize: '16px' }}>{article.body}</p>
-      <aside className="py-8 flex flex-col gap-4">
-      <h4 className="text-lg font-bold">Comentários</h4>
-      <CommentsCell postId={article.id} />
-      </aside>
+      <div className="mt-12">
+          <CommentForm postId={article.id} />
+          <div className="mt-12">
+            <CommentsCell postId={article.id} />
+          </div>
+        </div>
     </section>
 
   );

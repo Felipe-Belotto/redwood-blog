@@ -1,44 +1,61 @@
 import { Link, routes } from '@redwoodjs/router'
+import { Toaster } from '@redwoodjs/web/toast'
 
 import { useAuth } from 'src/auth'
 
 const BlogLayout = ({ children }) => {
-  const { isAuthenticated, currentUser, logOut } = useAuth()
+  const { logOut, isAuthenticated, currentUser } = useAuth()
 
-  function logOutHome(){
-    logOut()
-    window.reload(true)
-  }
   return (
     <>
-      <header className='w-full bg-purple-900 text-white' >
-        <div className="w-full flex justify-between py-4 px-8">
-          <h1 className='text-2xl'>
-            <Link to={routes.home()}>Redwood Blog</Link>
-          </h1>
-          <nav>
-          <ul className='flex gap-4'>
+      <Toaster />
+      <header className="relative flex justify-between items-center py-4 px-8 bg-blue-700 text-white">
+        <h1 className="text-2xl font-semibold tracking-tight">
+          <Link
+            className=" hover:text-blue-100 transition duration-100"
+            to={routes.home()}
+          >
+            Redwood Blog
+          </Link>
+        </h1>
+        <nav>
+          <ul className="relative flex items-center font-light">
             <li>
-              <Link to={routes.home()}>Home</Link>
+              <Link
+                className="py-2 px-4 hover:bg-blue-600 transition duration-100 rounded"
+                to={routes.about()}
+              >
+                About
+              </Link>
             </li>
             <li>
-              <Link to={routes.contact()}>Contact</Link>
+              <Link
+                className="py-2 px-4 hover:bg-blue-600 transition duration-100 rounded"
+                to={routes.contact()}
+              >
+                Contact
+              </Link>
+            </li>
+            <li>
+              {isAuthenticated ? (
+                <div>
+                  <button type="button" onClick={logOut} className="py-2 px-4">
+                    Logout
+                  </button>
+                </div>
+              ) : (
+                <Link to={routes.login()} className="py-2 px-4">
+                  Login
+                </Link>
+              )}
             </li>
           </ul>
-        </nav>
-          {isAuthenticated ? (
-            <div className="flex-between">
 
-              <button type="button" onClick={logOut}>
-                Logout
-              </button>
-            </div>
-          ) : (
-            <Link to={routes.login()}>Login</Link>
-          )}
-        </div>
+        </nav>
       </header>
-      <main className='w-full flex justify-center'>{children}</main>
+      <main className="max-w-4xl mx-auto p-12 bg-white shadow rounded-b">
+        {children}
+      </main>
     </>
   )
 }

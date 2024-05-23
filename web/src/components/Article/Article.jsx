@@ -1,8 +1,7 @@
-import { Link, routes } from '@redwoodjs/router'
-
-const truncate = (text, length) => {
-  return text.substring(0, length) + '...'
-}
+import { Link, routes } from "@redwoodjs/router";
+import CommentForm from "../CommentForm/CommentForm";
+import CommentsCell from "../CommentsCell";
+import { truncate } from "src/lib/formatters";
 
 const Article = ({ article, summary = false }) => {
   return (
@@ -13,12 +12,10 @@ const Article = ({ article, summary = false }) => {
         </h2>
       </header>
       <div className="mt-2 text-gray-900 font-light">
-        {summary ? truncate(article.body, 100) :
-        article.body }
+        {summary ? truncate(article.body, 100) : article.body}
       </div>
-
     </article>
   )
 }
 
-export default Article
+export default Article;
