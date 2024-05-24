@@ -13,27 +13,50 @@ const DELETE_POST_MUTATION = gql`
     }
   }
 `
-
-const PostsList = ({ posts }) => {
-  const [deletePost] = useMutation(DELETE_POST_MUTATION, {
-    onCompleted: () => {
-      toast.success('Post deleted')
-    },
-    onError: (error) => {
-      toast.error(error.message)
-    },
-    // This refetches the query on the list page. Read more about other ways to
-    // update the cache over here:
-    // https://www.apollographql.com/docs/react/data/mutations/#making-all-other-cache-updates
-    refetchQueries: [{ query: QUERY }],
-    awaitRefetchQueries: true,
-  })
-
-  const onDeleteClick = (id) => {
-    if (confirm('Are you sure you want to delete post ' + id + '?')) {
-      deletePost({ variables: { id } })
+const DELETE_COMMENT_MUTATION = gql`
+  mutation DeleteCommentsByPostIdMutation($postId: Int!) {
+    deleteCommentsByPostId(postId: $postId) {
+      count
     }
   }
+`;
+
+const PostsList = ({ posts }) => {
+  const [deleteCommentsByPostId] = useMutation(DELETE_COMMENT_MUTATION, {
+    onCompleted: ({ deleteCommentsByPostId }) => {
+      toast.success(`Deleted ${deleteCommentsByPostId.count} comments`);
+    },
+    onError: (error) => {
+      toast.error(error.message);
+    },
+    refetchQueries: [{ query: QUERY }],
+    awaitRefetchQueries: true,
+  });
+
+  const [deletePost] = useMutation(DELETE_POST_MUTATION, {
+    onCompleted: () => {
+      toast.success('Post deleted');
+    },
+    onError: (error) => {
+      toast.error(error.message);
+    },
+    refetchQueries: [{ query: QUERY }],
+    awaitRefetchQueries: true,
+  });
+
+  const onDeleteClick = async (id) => {
+    if (confirm('Are you sure you want to delete post ' + id + '?')) {
+      try {
+        // Primeiro, exclui os comentários associados ao post
+        await deleteCommentsByPostId({ variables: { postId: id } });
+
+        // Em seguida, exclui o post
+        deletePost({ variables: { id } });
+      } catch (error) {
+        toast.error(error.message);
+      }
+    }
+  };
 
   return (
     <div className="rw-segment rw-table-wrapper-responsive">

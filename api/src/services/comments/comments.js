@@ -15,3 +15,9 @@ export const deleteComment = ({ id }) => {
     where: { id },
   })
 }
+
+export const deleteCommentsByPostId = ({ postId }) => {
+  return db.comment.deleteMany({
+    where: { postId },
+  });
+};
