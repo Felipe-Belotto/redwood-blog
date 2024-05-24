@@ -9,7 +9,7 @@ const BlogLayout = ({ children }) => {
   return (
     <>
       <Toaster />
-      <header className="relative flex justify-between items-center py-4 px-4 lg:px-8 bg-blue-700 text-white">
+      <header className="relative flex justify-between items-center py-4 px-4 lg:px-8 bg-blue-950 text-white">
         <h1 className="lg:text-2xl font-semibold tracking-tight">
           <Link
             className=" hover:text-blue-100 transition duration-100"
@@ -22,7 +22,7 @@ const BlogLayout = ({ children }) => {
           <ul className="relative flex items-center font-light gap-4">
             <li>
               <Link
-                className="py-2 px-4 hover:bg-blue-600 transition duration-100 rounded"
+                className="py-2 px-4 hover:bg-blue-900 transition duration-100 rounded"
                 to={routes.about()}
               >
                 About
@@ -30,7 +30,7 @@ const BlogLayout = ({ children }) => {
             </li>
             <li>
               <Link
-                className="py-2 px-4 hover:bg-blue-600 transition duration-100 rounded"
+                className="py-2 px-4 hover:bg-blue-900 transition duration-100 rounded"
                 to={routes.contact()}
               >
                 Contact
