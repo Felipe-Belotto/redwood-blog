@@ -13,11 +13,11 @@ const Article = ({ article, summary = false }) => {
       <div className="mt-2 text-gray-900 font-light">
         {summary ? article.body  : truncate(article.body, 100)}
       </div>
-      <div>
-      <span className="ml-2 text-gray-400 font-normal">
+      <div className="flex justify-between text-sm px-2">
+      <span className=" text-gray-400 font-normal">
             by {article.user.name}
           </span>
-      <span className="ml-2 text-gray-400 font-normal">
+      <span className=" text-gray-400 font-normal">
             {formattedDate(article.createdAt)}
           </span>
       </div>

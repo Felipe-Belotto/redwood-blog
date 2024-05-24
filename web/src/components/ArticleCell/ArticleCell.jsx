@@ -1,3 +1,4 @@
+import { formattedDate } from "../Comment";
 import CommentForm from "../CommentForm/CommentForm";
 import CommentsCell from "../CommentsCell";
 
@@ -30,12 +31,20 @@ export const Success = ({ article }) => {
   }
 
   return (
-    <section className="lg:min-w-[500px]">
+    <section className="lg:min-w-[500px] flex flex-col gap-4">
       <h1 style={{ fontSize: '24px' }}>{article.title}</h1>
       <p style={{ fontSize: '16px' }}>{article.body}</p>
-      <div className="mt-6 lg:mt-12">
+      <div className="flex justify-between text-sm p-2">
+      <span className=" text-gray-400 font-normal">
+            by {article.user.name}
+          </span>
+      <span className=" text-gray-400 font-normal">
+            {formattedDate(article.createdAt)}
+          </span>
+      </div>
+      <div className="mt-6 flex flex-col">
           <CommentForm postId={article.id} />
-          <div className="mt-6 lg:mt-12">
+          <div className="mt-6">
             <CommentsCell postId={article.id} />
           </div>
         </div>
