@@ -19,7 +19,7 @@ const BlogLayout = ({ children }) => {
           </Link>
         </h1>
         <nav>
-          <ul className="relative flex items-center font-light">
+          <ul className="relative flex items-center font-light gap-4">
             <li>
               <Link
                 className="py-2 px-4 hover:bg-blue-600 transition duration-100 rounded"
@@ -38,13 +38,14 @@ const BlogLayout = ({ children }) => {
             </li>
             <li>
               {isAuthenticated ? (
-                <div>
-                  <button type="button" onClick={logOut} className="py-2 px-4">
+                <div className='flex items-center gap-4'>
+                  <p className='text-sm'>{currentUser.email}</p>
+                  <button type="button" onClick={logOut} className="text-sm py-2 px-4 bg-red-500 text-white rounded">
                     Logout
                   </button>
                 </div>
               ) : (
-                <Link to={routes.login()} className="py-2 px-4">
+                <Link to={routes.login()} className="text-sm py-2 px-4 bg-orange-500 text-white rounded">
                   Login
                 </Link>
               )}
@@ -53,7 +54,7 @@ const BlogLayout = ({ children }) => {
 
         </nav>
       </header>
-      <main className="lg:max-w-4xl mx-auto p-6 lg:p-12 bg-white shadow rounded-b">
+      <main className="lg:max-w-4xl mx-auto p-6 lg:p-12 bg-white shadow rounded-b mt-6 lg:mt-12">
         {children}
       </main>
     </>

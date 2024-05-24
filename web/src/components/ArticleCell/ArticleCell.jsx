@@ -27,7 +27,7 @@ export const Success = ({ article }) => {
   }
 
   return (
-    <section className="lg:w-[500px] lg:mt-16">
+    <section className="lg:min-w-[500px] lg:mt-16">
       <h1 style={{ fontSize: '24px' }}>{article.title}</h1>
       <p style={{ fontSize: '16px' }}>{article.body}</p>
       <div className="mt-6 lg:mt-12">
