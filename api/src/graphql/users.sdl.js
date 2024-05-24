@@ -3,10 +3,10 @@ export const schema = gql`
     id: Int!
     name: String
     email: String!
-    hashedPassword: String!
-    salt: String!
-    resetToken: String
-    resetTokenExpiresAt: DateTime
+    # hashedPassword: String!
+    # salt: String!
+    # resetToken: String
+    # resetTokenExpiresAt: DateTime
   }
 
   type Query {

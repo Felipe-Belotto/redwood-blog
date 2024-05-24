@@ -2,12 +2,15 @@ import CommentForm from "../CommentForm/CommentForm";
 import CommentsCell from "../CommentsCell";
 
 export const QUERY = gql`
-  query FindArticleQuery($id: Int!) {
+  query ArticleQuery($id: Int!) {
     article: post(id: $id) {
       id
       title
       body
       createdAt
+      user {
+        name
+      }
     }
   }
 `

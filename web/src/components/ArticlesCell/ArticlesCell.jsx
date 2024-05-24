@@ -7,10 +7,12 @@ export const QUERY = gql`
       title
       body
       createdAt
+      user {
+        name
+      }
     }
   }
 `
-
 export const Loading = () => <div>Loading...</div>
 
 export const Empty = () => <div>Empty</div>
