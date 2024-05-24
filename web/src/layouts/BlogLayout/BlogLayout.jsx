@@ -39,7 +39,7 @@ const BlogLayout = ({ children }) => {
             <li>
               {isAuthenticated ? (
                 <div className='flex items-center gap-4'>
-                  <p className='text-sm hidden lg:block'>{currentUser.email ? currentUser.email : "Logando"}</p>
+                  <p className='text-sm hidden lg:block'>{isAuthenticated ? currentUser.email : "Logando"}</p>
                   <button type="button" onClick={logOut} className="text-sm py-2 px-4 bg-red-500 text-white rounded">
                     Logout
                   </button>
