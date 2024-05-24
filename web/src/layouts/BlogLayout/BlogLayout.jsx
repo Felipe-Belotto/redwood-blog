@@ -1,10 +1,16 @@
 import { Link, routes } from '@redwoodjs/router'
-import { Toaster } from '@redwoodjs/web/toast'
+import { Toaster, toast } from '@redwoodjs/web/toast'
+import { useEffect, useState } from 'react'
 
 import { useAuth } from 'src/auth'
 
 const BlogLayout = ({ children }) => {
   const { logOut, isAuthenticated, currentUser } = useAuth()
+
+  const logoutHandler = () => {
+    logOut()
+    toast.success('See you soon!')
+  }
 
   return (
     <>
@@ -39,8 +45,8 @@ const BlogLayout = ({ children }) => {
             <li>
               {isAuthenticated ? (
                 <div className='flex items-center gap-4'>
-                  <p className='text-sm hidden lg:block'>{isAuthenticated ? currentUser.email : "Logando"}</p>
-                  <button type="button" onClick={logOut} className="text-sm py-2 px-4 bg-red-500 text-white rounded">
+                  <p className='text-sm hidden lg:block'>{currentUser.email}</p>
+                  <button type="button" onClick={logoutHandler} className="text-sm py-2 px-4 bg-red-500 text-white rounded">
                     Logout
                   </button>
                 </div>
